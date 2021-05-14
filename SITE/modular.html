@@ -59,6 +59,17 @@
     <script type="text/javascript">
         let Counter = 0;
 
+        /* FUNÇÃO QUE FAZ COM QUE O ITEM SELECIONADO RECEBA UM FOCO */
+        function select(){
+            console.log("dentro");
+        };
+
+        function unselect(){
+            console.log("fora");
+        };
+
+        /* FUNCÃO QUE FAZ COM QUE QUANDO O BOTÃO DE ESCREVA FOR APERTADO ELE CRIE UMA DIV COM UM PARÁGRAFO
+        EDITÁVEL COM O FOCO NELE E QUANDO PASSE O MOUSE EM CIMA ELE RECEBA UM FOCO */
         function textcreate (){
             /* Criando e declarando as variáveis como uma tag */
             var CreateDiv = document.createElement("div");
@@ -71,6 +82,8 @@
 
             /* Torna a Div e tudo que está em seu interior arrastável */
             CreateDiv.setAttribute('draggable', true);
+            CreateDiv.setAttribute('onmouseover', select());
+            CreateDiv.setAttribute('onmouseout', unselect());
             CreateDiv.setAttribute('id', 'textdiv' + Counter);
             Paragraph.setAttribute('contentEditable', true);
 
