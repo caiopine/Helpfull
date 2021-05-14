@@ -39,7 +39,7 @@
         .boards {
             align-items: center;
             margin-top: 10px; margin-left: auto; margin-right: auto;
-            padding: 30px;
+            padding-left:30px; padding-right:30px; padding-bottom:50px; padding-top: 50px;
             width: 90%; height: auto; min-height: 150px;
             margin-top: 32px;
             background: #FFFFFF;
@@ -51,22 +51,33 @@
             width: 600px; height: 30px;
             padding:5px;
             margin-left: auto; margin-right: auto;;
-            background-color: indigo;
+            background-color: none;
         }
 
     </style>
     <!-- JavaScript -->
     <script type="text/javascript">
-        
-        
+        let Counter = 0;
 
         function textcreate (){
+            /* Criando e declarando as variáveis como uma tag */
             var CreateDiv = document.createElement("div");
-            CreateDiv.classList.add('textmodule');
-            CreateDiv.setAttribute('draggable', true);
+            var Paragraph = document.createElement("p");
+            Counter++;
 
+            /* Dando uma classe para as variáveis */
+            CreateDiv.classList.add('textmodule');
+            Paragraph.classList.add('paragraph');
+
+            /* Torna a Div e tudo que está em seu interior arrastável */
+            CreateDiv.setAttribute('draggable', true);
+            CreateDiv.setAttribute('id', 'textdiv' + Counter);
+            Paragraph.setAttribute('contentEditable', true);
+
+            /* Coloca as Variáveis ao código quando o botão é apertado. */
             document.getElementById('elemento').appendChild(CreateDiv);
-        }
+            document.getElementById('textdiv' + Counter).appendChild(Paragraph);
+        };
     </script>
 
     <title>Your Page</title>
@@ -76,7 +87,7 @@
     <div class="toolbar">
         <ul class="tool-list">
             <li id="write" class="tool">
-                <button type="button" onclick="textcreate()">
+                <button id="writebutton" type="button" onclick="textcreate()">
                     <i class="fas fa-pencil-alt"><br>Escreva</i>
                 </button>
             </li>
