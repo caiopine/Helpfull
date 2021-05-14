@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Colocar os ícones -->
+    <script src="https://kit.fontawesome.com/aa3f933996.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <style>
+        /* Customização de toda a página */
+        * { text-align: center; align-items: center;}
+        body { background-color: #F0F0F0; }
+
+        /* CSS DA BARRA DE FERRAMENTAS */
+        .toolbar {
+            display: inline-block;
+            margin-top: 10px;}
+            
+        .tool-list {
+            display: flex;
+            list-style: none;
+            padding: 10px;
+            margin: 1rem;
+            overflow: hidden;
+            border-radius: 3px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        .tool {
+            display: block;
+            border: none;
+            padding: 5px;
+            font-size: 20px;
+        }
+        button { border: 1px solid silver; border-radius: 5px; width: 70px; height: 50px;}
+        i { padding: 5px; align-items: center;}
+
+        /* CSS DA ÁREA DE CRIAÇÃO */
+        .boards {
+            align-items: center;
+            margin-top: 10px; margin-left: auto; margin-right: auto;
+            padding: 30px;
+            width: 90%; height: auto; min-height: 150px;
+            margin-top: 32px;
+            background: #FFFFFF;
+            border-radius: 1px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+
+        .textmodule{
+            width: 600px; height: 30px;
+            padding:5px;
+            margin-left: auto; margin-right: auto;;
+            background-color: indigo;
+        }
+
+    </style>
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        
+        
+
+        function textcreate (){
+            var CreateDiv = document.createElement("div");
+            CreateDiv.classList.add('textmodule');
+            CreateDiv.setAttribute('draggable', true);
+
+            document.getElementById('elemento').appendChild(CreateDiv);
+        }
+    </script>
+
+    <title>Your Page</title>
+</head>
+<body>
+    <!-- BARRA DE FERRAMENTAS -->
+    <div class="toolbar">
+        <ul class="tool-list">
+            <li id="write" class="tool">
+                <button type="button" onclick="textcreate()">
+                    <i class="fas fa-pencil-alt"><br>Escreva</i>
+                </button>
+            </li>
+            <li id="imageandvideo" class="tool">
+                <button type="button" onclick="" href="*">
+                    <i class="fas fa-photo-video"><br>Mídia</i>
+                </button>
+            </li>
+            <li id="pagecustomization" class="tool" draggable="false">
+                <button type="button" onclick="" href="*">
+                    <i class="fas fa-paint-brush"><br>Estilo</i>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <!-- CONSTRUÇÃO DA PÁGINA -->
+    <div class="boards" id="elemento">
+    </div>
+</body>
+</html>
