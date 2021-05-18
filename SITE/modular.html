@@ -91,6 +91,23 @@
             document.getElementById('elemento').appendChild(CreateDiv);
             document.getElementById('textdiv' + Counter).appendChild(Paragraph).focus();
         };
+
+        function midiacreate (){
+            var CreateDiv = document.createElement("div");
+
+
+            CreateDiv.classList.add('textmodule');
+
+            /* Torna a Div e tudo que está em seu interior arrastável */
+            CreateDiv.setAttribute('draggable', true);
+            CreateDiv.setAttribute('onmouseover', select());
+            CreateDiv.setAttribute('onmouseout', unselect());
+            CreateDiv.setAttribute('id', 'textdiv' + Counter);
+
+            /* Coloca as Variáveis ao código quando o botão é apertado. */
+            document.getElementById('elemento').appendChild(CreateDiv);
+
+        };
     </script>
 
     <title>Your Page</title>
@@ -100,12 +117,12 @@
     <div class="toolbar">
         <ul class="tool-list">
             <li id="write" class="tool">
-                <button id="writebutton" type="button" onclick="textcreate()">
+                <button type="button" onclick="textcreate()">
                     <i class="fas fa-pencil-alt"><br>Escreva</i>
                 </button>
             </li>
-            <li id="imageandvideo" class="tool">
-                <button type="button" onclick="" href="*">
+            <li id="midiabutton" class="tool">
+                <button type="button" onclick="midiacreate()">
                     <i class="fas fa-photo-video"><br>Mídia</i>
                 </button>
             </li>
