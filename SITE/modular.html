@@ -32,7 +32,7 @@
             padding: 5px;
             font-size: 20px;
         }
-        button { border: 1px solid silver; border-radius: 5px; width: 70px; height: 50px;}
+        button { border: 1px solid silver; border-radius: 5px; width: 70px; height: 50px; cursor: pointer;}
         i { padding: 5px; align-items: center;}
 
         /* CSS DA ÁREA DE CRIAÇÃO */
@@ -60,6 +60,7 @@
         let Counter = 0;
 
         /* FUNÇÃO QUE FAZ COM QUE O ITEM SELECIONADO RECEBA UM FOCO */
+        
         function select(){
             console.log("dentro");
         };
@@ -77,7 +78,7 @@
             Counter++;
 
             /* Dando uma classe para as variáveis */
-            CreateDiv.classList.add('textmodule');
+            CreateDiv.classList.add('textmodule' + Counter);
             Paragraph.classList.add('paragraph');
 
             /* Torna a Div e tudo que está em seu interior arrastável */
@@ -88,24 +89,31 @@
             Paragraph.setAttribute('contentEditable', true);
 
             /* Coloca as Variáveis ao código quando o botão é apertado. */
-            document.getElementById('elemento').appendChild(CreateDiv);
+            document.getElementById('board').appendChild(CreateDiv);
             document.getElementById('textdiv' + Counter).appendChild(Paragraph).focus();
         };
 
+        /* FUNCÃO QUE FAZ COM QUE QUANDO O BOTÃO DE MÍDIA FOR APERTADO ELE CRIE UMA DIV ONDE PODERÁ SER INSERI
+        DA UMA MÍDIA COM O FOCO NELE, E QUANDO PASSE O MOUSE EM CIMA ELE RECEBA UM FOCO */
         function midiacreate (){
+            /* FAZ COM QUE O BOTÃO MÍDIA SEJA UM INPUT FILE */
+            const realfile = document.getElementById("real-midiabutton");
+            const custombutton = document.getElementById("midia");
+            realfile.click();
+
             var CreateDiv = document.createElement("div");
+            Counter++;
 
-
-            CreateDiv.classList.add('textmodule');
+            CreateDiv.classList.add('midiamodule');
 
             /* Torna a Div e tudo que está em seu interior arrastável */
             CreateDiv.setAttribute('draggable', true);
             CreateDiv.setAttribute('onmouseover', select());
             CreateDiv.setAttribute('onmouseout', unselect());
-            CreateDiv.setAttribute('id', 'textdiv' + Counter);
+            CreateDiv.setAttribute('id', 'midiadiv' + Counter);
 
             /* Coloca as Variáveis ao código quando o botão é apertado. */
-            document.getElementById('elemento').appendChild(CreateDiv);
+            document.getElementById('board').appendChild(CreateDiv);
 
         };
     </script>
@@ -122,9 +130,10 @@
                 </button>
             </li>
             <li id="midiabutton" class="tool">
-                <button type="button" onclick="midiacreate()">
+                <button type="button" id="midia" onclick="midiacreate()">
                     <i class="fas fa-photo-video"><br>Mídia</i>
                 </button>
+                <input type="file" id="real-midiabutton" multiple hidden accept="image/*,video/*,.pdf">
             </li>
             <li id="pagecustomization" class="tool" draggable="false">
                 <button type="button" onclick="" href="*">
@@ -135,7 +144,7 @@
     </div>
     <br>
     <!-- CONSTRUÇÃO DA PÁGINA -->
-    <div class="boards" id="elemento">
+    <div class="boards" id="board">
     </div>
 </body>
 </html>
