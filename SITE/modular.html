@@ -6,123 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Linkar os ícones dos li's. -->
     <script src="https://kit.fontawesome.com/aa3f933996.js" crossorigin="anonymous"></script>
-    <script src="navigationbar.html" crossorigin="anonymous"></script>
+    <link type="text/html" href="navigationbar.html">
     <!-- CSS -->
-    <style>
-        /* Customização de toda a página */
-        * { text-align: center; align-items: center;}
-        body { background-color: #F0F0F0; }
-
-        /* CSS DA BARRA DE FERRAMENTAS */
-        .toolbar {
-            display: inline-block;
-            margin-top: 10px;}
-            
-        .tool-list {
-            display: flex;
-            list-style: none;
-            padding: 10px;
-            margin: 1rem;
-            overflow: hidden;
-            border-radius: 3px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        }
-        .tool {
-            display: block;
-            border: none;
-            padding: 5px;
-            font-size: 20px;
-        }
-        button { border: 1px solid silver; border-radius: 5px; width: 70px; height: 50px; cursor: pointer;}
-        i { padding: 5px; align-items: center;}
-
-        /* CSS DA ÁREA DE CRIAÇÃO */
-        .boards {
-            align-items: center;
-            margin-top: 10px; margin-left: auto; margin-right: auto;
-            padding-left:30px; padding-right:30px; padding-bottom:50px; padding-top: 50px;
-            width: 90%; height: auto; min-height: 150px;
-            margin-top: 32px;
-            background: #FFFFFF;
-            border-radius: 1px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        }
-
-        .textmodule{
-            width: 600px; height: 30px;
-            padding:5px;
-            margin-left: auto; margin-right: auto;;
-            background-color: none;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/modular.css">
     <!-- JavaScript -->
-    <script type="text/javascript">
-        let Counter = 0;
-
-        /* FUNÇÃO QUE FAZ COM QUE O ITEM SELECIONADO RECEBA UM FOCO */
-        
-        function select(){
-            console.log("dentro");
-        };
-
-        function unselect(){
-            console.log("fora");
-        };
-
-        /* FUNCÃO QUE FAZ COM QUE QUANDO O BOTÃO DE ESCREVA FOR APERTADO ELE CRIE UMA DIV COM UM PARÁGRAFO
-        EDITÁVEL COM O FOCO NELE E QUANDO PASSE O MOUSE EM CIMA ELE RECEBA UM FOCO */
-        function textcreate (){
-            /* Criando e declarando as variáveis como uma tag */
-            var CreateDiv = document.createElement("div");
-            var Paragraph = document.createElement("p");
-            Counter++;
-
-            /* Dando uma classe para as variáveis */
-            CreateDiv.classList.add('textmodule' + Counter);
-            Paragraph.classList.add('paragraph');
-
-            /* Torna a Div e tudo que está em seu interior arrastável */
-            CreateDiv.setAttribute('draggable', true);
-            CreateDiv.setAttribute('onmouseover', select());
-            CreateDiv.setAttribute('onmouseout', unselect());
-            CreateDiv.setAttribute('id', 'textdiv' + Counter);
-            Paragraph.setAttribute('contentEditable', true);
-
-            /* Coloca as Variáveis ao código quando o botão é apertado. */
-            document.getElementById('board').appendChild(CreateDiv);
-            document.getElementById('textdiv' + Counter).appendChild(Paragraph).focus();
-        };
-
-        /* FUNCÃO QUE FAZ COM QUE QUANDO O BOTÃO DE MÍDIA FOR APERTADO ELE CRIE UMA DIV ONDE PODERÁ SER INSERI
-        DA UMA MÍDIA COM O FOCO NELE, E QUANDO PASSE O MOUSE EM CIMA ELE RECEBA UM FOCO */
-        function midiacreate (){
-            /* FAZ COM QUE O BOTÃO MÍDIA SEJA UM INPUT FILE */
-            const realfile = document.getElementById("real-midiabutton");
-            const custombutton = document.getElementById("midia");
-            realfile.click();
-
-            var CreateDiv = document.createElement("div");
-            Counter++;
-
-            CreateDiv.classList.add('midiamodule');
-
-            /* Torna a Div e tudo que está em seu interior arrastável */
-            CreateDiv.setAttribute('draggable', true);
-            CreateDiv.setAttribute('onmouseover', select());
-            CreateDiv.setAttribute('onmouseout', unselect());
-            CreateDiv.setAttribute('id', 'midiadiv' + Counter);
-
-            /* Coloca as Variáveis ao código quando o botão é apertado. */
-            document.getElementById('board').appendChild(CreateDiv);
-
-        };
-    </script>
-
+    <script src="javascript/modular.js"></script>
     <title>Your Page</title>
 </head>
 <body>
-    <link href="toolbar.html">
     <!-- BARRA DE FERRAMENTAS -->
     <div class="toolbar">
         <ul class="tool-list">
@@ -135,7 +26,7 @@
                 <button type="button" id="midia" onclick="midiacreate()">
                     <i class="fas fa-photo-video"><br>Mídia</i>
                 </button>
-                <input type="file" id="real-midiabutton" multiple hidden accept="image/*,video/*,.pdf">
+                <input type="file" id="real-midiabutton" hidden accept="image/*,video/*,.pdf">
             </li>
             <li id="pagecustomization" class="tool" draggable="false">
                 <button type="button" onclick="" href="*">
