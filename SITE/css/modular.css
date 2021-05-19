@@ -1,13 +1,13 @@
- /* Customização de toda a página */
- * { text-align: center; align-items: center;}
- body { background-color: #F0F0F0; }
+/* Customização de toda a página */
+* { text-align: center; align-items: center;}
+body { background-color: #F0F0F0; }
 
- /* CSS DA BARRA DE FERRAMENTAS */
- .toolbar {
+/* CSS DA BARRA DE FERRAMENTAS */
+.toolbar {
      display: inline-block;
      margin-top: 10px;}
      
- .tool-list {
+.tool-list {
      display: flex;
      list-style: none;
      padding: 10px;
@@ -15,18 +15,18 @@
      overflow: hidden;
      border-radius: 3px;
      box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
- }
- .tool {
+}
+.tool {
      display: block;
      border: none;
      padding: 5px;
      font-size: 20px;
  }
- button { border: 1px solid silver; border-radius: 5px; width: 70px; height: 50px; cursor: pointer;}
- i { padding: 5px; align-items: center;}
+button { border: 1px solid silver; border-radius: 5px; width: 70px; height: 50px; cursor: pointer;}
+i { padding: 5px; align-items: center;}
 
  /* CSS DA ÁREA DE CRIAÇÃO */
- .boards {
+.boards {
      align-items: flex;
      margin-top: 10px; margin-left: auto; margin-right: auto;
      padding-left:30px; padding-right:30px; padding-bottom:50px; padding-top: 50px;
@@ -35,11 +35,16 @@
      background: #FFFFFF;
      border-radius: 1px;
      box-shadow: 0 10px 30px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
- }
+}
 
- .textmodule{
+.textmodule{
      width: 600px; height: 30px;
      padding:5px;
      margin-left: auto; margin-right: auto;;
-     background-color: none;
- }
+     background-color: none;}
+
+/* SELECIONADO */
+.paragraph:hover{
+    border: 1px solid blue;
+    border-radius: 5px;
+}

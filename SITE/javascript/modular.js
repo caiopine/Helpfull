@@ -2,7 +2,6 @@ let Counter = 0;
 
         /* FUNÇÃO QUE FAZ COM QUE O ITEM SELECIONADO RECEBA UM FOCO */
         function select(){
-            document.;
         };
 
         function unselect(){
@@ -18,7 +17,7 @@ let Counter = 0;
             Counter++;
 
             /* Dando uma classe para as variáveis */
-            CreateDiv.classList.add('textmodule' + Counter);
+            CreateDiv.classList.add('textmodule');
             Paragraph.classList.add('paragraph');
 
             /* Torna a Div e tudo que está em seu interior arrastável */
