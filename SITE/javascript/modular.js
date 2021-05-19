@@ -2,7 +2,7 @@ let Counter = 0;
 
         /* FUNÇÃO QUE FAZ COM QUE O ITEM SELECIONADO RECEBA UM FOCO */
         function select(){
-            console.log("dentro");
+            document.;
         };
 
         function unselect(){
@@ -46,6 +46,7 @@ let Counter = 0;
                 const reader = new FileReader();
 
                 reader.addEventListener("load", () => {
+
                 })
 
                 reader.readAsDataURL(this.files[0]);

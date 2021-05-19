@@ -27,7 +27,7 @@
 
  /* CSS DA ÁREA DE CRIAÇÃO */
  .boards {
-     align-items: center;
+     align-items: flex;
      margin-top: 10px; margin-left: auto; margin-right: auto;
      padding-left:30px; padding-right:30px; padding-bottom:50px; padding-top: 50px;
      width: 90%; height: auto; min-height: 150px;
