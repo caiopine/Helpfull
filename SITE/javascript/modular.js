@@ -5,7 +5,6 @@ let Counter = 0;
         };
 
         function unselect(){
-            console.log("fora");
         };
 
         /* FUNCÃO QUE FAZ COM QUE QUANDO O BOTÃO DE ESCREVA FOR APERTADO ELE CRIE UMA DIV COM UM PARÁGRAFO
@@ -18,7 +17,7 @@ let Counter = 0;
 
             /* Dando uma classe para as variáveis */
             CreateDiv.classList.add('textmodule');
-            Paragraph.classList.add('paragraph');
+            Paragraph.classList.add('paragraph','selected');
 
             /* Torna a Div e tudo que está em seu interior arrastável */
             CreateDiv.setAttribute('draggable', true);
@@ -26,6 +25,7 @@ let Counter = 0;
             CreateDiv.setAttribute('onmouseout', "unselect()");
             CreateDiv.setAttribute('id', 'textdiv' + Counter);
             Paragraph.setAttribute('contentEditable', true);
+            Paragraph.setAttribute('placeholder', "Digite aqui!");
 
             /* Coloca as Variáveis ao código quando o botão é apertado. */
             document.getElementById('board').appendChild(CreateDiv);
