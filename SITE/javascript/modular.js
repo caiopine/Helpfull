@@ -41,15 +41,7 @@ let Counter = 0;
             realfile.click();
 
             /* SALVANDO O ARQUIVO DO USUÁRIO */
-            document.querySelector("#real-midiabutton").addEventListener("change", function(){
-                const reader = new FileReader();
-
-                reader.addEventListener("load", () => {
-
-                })
-
-                reader.readAsDataURL(this.files[0]);
-            });
+            let img = loadImage('');
 
             var CreateDiv = document.createElement("div");
             Counter++;
