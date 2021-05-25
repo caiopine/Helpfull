@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/modular.css">
     <!-- JavaScript -->
     <script src="javascript/modular.js"></script>
+
     <title>Your Page</title>
 </head>
 <body>
@@ -23,10 +24,12 @@
                 </button>
             </li>
             <li id="midiabutton" class="tool">
-                <button type="button" id="midia" onclick="midiacreate()">
+                <button type="button" id="midia" onclick="execfilefield()">
                     <i class="fas fa-photo-video"><br>Mídia</i>
                 </button>
-                <input type="file" id="real-midiabutton" name="midiabutton" hidden accept="image/*,video/*,.pdf">
+                <form action="upload.php" method="POST" enctype="multipart/form-data">
+                    <input onchange="midiacreate()" type="file" id="botaomidia" name="botaomidia" hidden accept="image/*,video/*,.pdf">
+                </form>
             </li>
             <li id="pagecustomization" class="tool" draggable="false">
                 <button type="button" onclick="">
