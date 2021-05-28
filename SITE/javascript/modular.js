@@ -36,11 +36,14 @@ EDITÁVEL COM O FOCO NELE E QUANDO PASSE O MOUSE EM CIMA ELE RECEBA UM FOCO */
     function execfilefield(){
         document.getElementById("botaomidia").click();
     }
+
+    function submitform(){
+        document.getElementById("sendform").click();
+    }
     /* FUNCÃO QUE FAZ COM QUE QUANDO O BOTÃO DE MÍDIA FOR APERTADO ELE CRIE UMA DIV ONDE PODERÁ SER INSERI
     DA UMA MÍDIA COM O FOCO NELE, E QUANDO PASSE O MOUSE EM CIMA ELE RECEBA UM FOCO */
     function midiacreate() {
         image = document.getElementById("botaomidia").value;
-        
         
         /* Torna a Div e tudo que está em seu interior arrastável */
         var CreateDiv = document.createElement("div");
