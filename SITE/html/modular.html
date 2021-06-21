@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linkar os ícones dos li's. -->
+    <script src="https://kit.fontawesome.com/aa3f933996.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/modular.css">
+    <!-- JavaScript -->
+    <script src="javascript/modular.js"></script>
+
+    <title>Your Page</title>
+</head>
+<body>
+    <!-- BARRA DE FERRAMENTAS -->
+    <div class="toolbar">
+        <ul class="tool-list">
+            <li id="write" class="tool">
+                <button type="button" onclick="textcreate()">
+                    <i class="fas fa-pencil-alt"><br>Escreva</i>
+                </button>
+            </li>
+            <li id="midiabutton" class="tool">
+                <button type="button" id="midia" onclick="execfilefield()">
+                    <i class="fas fa-photo-video"><br>Mídia</i>
+                </button>
+                <script lang="php">
+                    if(isset($_POST['sendform'])){
+                        $extensao = pathinfo($_FILES['arquivo']['name'], PATHINFO_EXTENSION);
+                        $pasta = "uploads/profiles";
+                        $temporario = $_FILES['arquivo']['tmp_name'];
+                        $novonome = uniqid().$extensao;
+
+                        if (move_upload_file($temporario, $pasta.$novonome)){
+                            $mensagem = "Upload feito com sucesso";}
+                        else{
+                            $mensagem = "Erro, não foi possível fazer o upload";}
+                        endif;
+                    }
+                    else{$mensagem = "ERRO!";}
+                    endif;
+                </script>
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+                    <input onchange="submitform()" type="file" id="botaomidia" name="botaomidia" hidden accept="image/*,video/*,.pdf">
+                    <input type="submit" id="sendform" name="sendform" hidden>
+                </form>
+            </li>
+            <li id="pagecustomization" class="tool" draggable="false">
+                <button type="button" onclick="">
+                    <i class="fas fa-paint-brush"><br>Estilo</i>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <!-- CONSTRUÇÃO DA PÁGINA -->
+    <div class="boards" id="board">
+    </div>
+</body>
+</html>
