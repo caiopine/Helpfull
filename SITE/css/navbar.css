@@ -8,5 +8,11 @@ header .logo{position: relative; width: 150px;}
 .nav-list-2{position: relative; display: flex; margin-left: 30%;}
 .nav-obj{list-style: none;}
 .nav-obj a {display: inline-flex; margin-left: 40px; text-decoration: none; color: #fff;}
-.background-circle{background-color: #585858; width: 40px; height: 40px; align-items: center; border-radius: 20px;}
+.background-circle{position:sticky;background-color: #585858; width: 40px; height: 40px; align-items: center; border-radius: 20px;}
 ion-icon{width: 100px; font-weight: bold;}
+/* SEARCH BAR */
+.search{ position:static; width: 40px; height: 40px; background:#585858; border-radius: 60px; transition: 0.5s;}
+.search .icon {cursor: pointer; position: absolute; top: 0; left: 0; width: 40px; height: 40px; background: #585858; border-radius: 60px; display: flex; justify-content: center; align-items: center; z-index: 1000;}
+.search .icon:before{content: ''; position: absolute; width: 12px; height: 12px; border: 1px solid #fff; border-radius: 50%; transform: translate(-2px, -2px);}
+.search .icon:after{content: ''; position: absolute; width: 1px; height: 8px; background: #fff; transform: translate(6px,6px) rotate(315deg);}
+.search.active{position: relative; width: 200px; transform: translate(-200px, 0px);}

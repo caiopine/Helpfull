@@ -6,7 +6,7 @@
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 		<!-- CSS -->
-		<link rel="stylesheet" href="helpfull/css/navbar.css">
+		<link rel="stylesheet" href="css/navbar.css">
 	<!-- TÍTULO DA PÁGINA -->
 	<title>Helpfull</title>
 </head>
@@ -14,7 +14,7 @@
 	<!-- BARRA DE FERRAMENTAS -->
 	<header class="header" id="header">
 		<!-- LOGOTIPO -->
-		<a href="#"><img src="images/logotipo.png" alt="Helpfull" class="logo"></a>
+		<a href="HELPFULL.html"><img src="images/logotipo.png" alt="Helpfull" class="logo"></a>
 		<!-- LISTA DE OPÇÕES -->
 		<ul class="nav-list-1">
 			<li class="nav-obj"><a href="#">Sobre Nós</a></li>
@@ -22,7 +22,21 @@
 		</ul>
 		<!-- PERFIL E PESQUISA -->
 		<ul class="nav-list-2">
-			<li class="nav-obj"><a class="background-circle"><ion-icon name="search-outline"></ion-icon></a></li>
+		<!-- PESQUISA -->
+			<div class="search">
+				<div class="icon">
+				</div>
+				<div class="input">
+					<input hidden type="text" placeholder="Busca..." id="mysearch">
+				</div>
+				<script>
+					const icon = document.querySelector('.icon');
+					const search = document.querySelector('.search');
+					icon.onclick = function(){
+						search.classList.toggle('active');
+					}
+				</script>
+			</div>
 			<li class="nav-obj"><a class="background-circle"><ion-icon name="person-outline"></ion-icon></a></li>
 		</ul>
 	</header>
