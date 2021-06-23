@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- INTEGRAÇÕES DE BIBLIOTECAS E ETC -->
+	<!-- INTEGRAÇÕES DE BIBLIOTECAS E LINKS -->
 		<!-- ÍCONES -->
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -14,33 +14,38 @@
 </head>
 <body>
 	<!-- BARRA DE FERRAMENTAS -->
-	<header class="header" id="header">
+	<nav class="header" id="header">
 		<!-- LOGOTIPO -->
 		<a href="HELPFULL.html"><img src="images/logotipo.png" alt="Helpfull" class="logo"></a>
 		<!-- LISTA DE OPÇÕES -->
-		<ul class="nav-list-1">
-			<li class="nav-obj"><a href="#">Sobre Nós</a></li>
-			<li class="nav-obj"><a href="#">Projetos Sociais</a></li>
-		</ul>
-		<!-- PERFIL E PESQUISA -->
-		<ul class="nav-list-2">
-		<!-- PESQUISA -->
-			<div class="search">
-				<div class="icon">
-				</div>
-				<div class="input">
-					<input hidden type="text" placeholder="Busca..." id="mysearch">
-				</div>
-				<script>
-					const icon = document.querySelector('.icon');
-					const search = document.querySelector('.search');
-					icon.onclick = function(){
-						search.classList.toggle('active');
-					}
-				</script>
-			</div>
-			<li class="nav-obj"><a class="background-circle"><ion-icon name="person-outline"></ion-icon></a></li>
-		</ul>
-	</header>
+			<!-- LISTA COM OPÇÕES SIMPLES, DE REDIRECIONAMENTO -->
+			<ul class="nav-list-1">
+				<li class="nav-obj"><a href="#">Sobre Nós</a></li>
+				<li class="nav-obj"><a href="#">Projetos Sociais</a></li>
+			</ul>
+			<!-- LISTA COM OPÇÕES AVANÇADAS, DE BUSCA E PERFIL -->
+			<ul class="nav-list-2">
+				<!-- PESQUISA -->
+					<div class="background-circle">
+						<div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+						<div class="input">
+							<input type="text" placeholder="Busca..." id="mysearch">
+						</div>
+						<script>
+							const icon = document.querySelector('.icon');
+							const search = document.querySelector('.background-circle');
+							icon.onclick = function(){
+								search.classList.toggle('active');
+							}
+						</script>
+					</div>
+			</ul>
+			<ul class="nav-list-3">
+				<!-- PERFIL -->
+					<div class="background-circle">
+						<div class="icon" id="profilebtn"><ion-icon name="person-outline"></ion-icon></div>
+					</div>
+			</ul>
+	</nav>
 </body>
 </html>
