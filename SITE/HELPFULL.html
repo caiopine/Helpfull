@@ -7,12 +7,20 @@
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/login_register.css">
+		<!-- JAVA SCRIPT -->
+		
 		<!-- ÍCONE DO SITE -->
 		<link rel="shortcut icon" href="images/icons/favicon.ico">
 	<!-- TÍTULO DA PÁGINA -->
 	<title>Helpfull</title>
 </head>
 <body>
+	<div class="login_and_register_screen" id="login_and_register_screen">
+		<div class="login_screen">
+
+		</div>
+	</div>
 	<!-- BARRA DE FERRAMENTAS -->
 	<nav class="header" id="header">
 		<!-- LOGOTIPO -->
@@ -42,10 +50,34 @@
 			</ul>
 			<ul class="nav-list-3">
 				<!-- PERFIL -->
-					<div class="background-circle">
+					<div class="background-profile" id="profilebackground" hidden>
+						<div class="rounded-background-profile"></div>
+						<div class="squaded-background-profile"></div>
+						<div class="content-background-profile">
+							<a onclick="show_login_screen()"><div class="login-profile">
+								<p>Entrar</p>
+							</div></a>
+							<a href="helpfull.html/register"><div class="register-profile">
+								<p>Cadastrar-se</p>
+							</div></a>
+						</div>
+					</div>
+					<div class="background-circle" onclick="show_or_hide_profilemenu()">
 						<div class="icon" id="profilebtn"><ion-icon name="person-outline"></ion-icon></div>
 					</div>
+					<script>
+						profilebackground = document.getElementById('profilebackground');
+
+						function show_or_hide_profilemenu(){
+						if (profilebackground.getAttribute('hidden', true)){
+							profilebackground.removeAttribute('hidden');
+						}
+						else{
+							profilebackground.setAttribute('hidden', true);
+						}}
+					</script>
 			</ul>
 	</nav>
+	
 </body>
 </html>
