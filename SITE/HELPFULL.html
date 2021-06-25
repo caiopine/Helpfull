@@ -19,8 +19,71 @@
 <body>
 	<!-- TELA DE LOGIN -->
 	<div class="login_and_register_screen" id="login_and_register_screen">
-		<div class="login_screen">
+		<div class="screen">
+			<!--  CABEÇALHO DO LOGIN, COM LOGO E BOAS VINDAS -->
+				<div class="header_login">
+					<img src="images/icons/favicon.ico">
+					<span class="login_header_text">Entrar na Helpfull</span>
+				</div>
+			<!-- TROCA ENTRE ENTRAR E CADASTRAR-SE -->
+				<div class="switch_between">
+					<p class="login_and_register_text">Entrar</p>
+					<p class="login_and_register_text">Cadastrar-se</p>
+					<hr class="hr_line">
+				</div>
+			<!-- OPÇÕES DE LOGIN -->
+			<div class="login_screen" id="login_screen" hidden>
+				<div class="login_field">
+					<div class="user_field_container">
+					<span class="user_text" style="font-weight: bold;">Usuário</span>
+						<input id="user_field" class="user_field">
+					</div>
+					<div class="password_field_container">
+					<span class="password_text" style="font-weight: bold;">Senha</span>
+						<input id="password_field" class="user_field" type="password">
+					</div>
+					<a href="#"><span class="login_problems">Problemas para efetuar login?</span></a>
+					<hr class="hr_line" style="margin-left: 0px; margin-top: 15px;">
+				</div>
+				<div class="logins_buttons">
+					<button class="login_button" type="submit">Entrar</button>
+				</div>
+			</div>
+			<!-- OPÇÕES DE REGISTRO -->
+			<div class="register_screen" id="register_screen">
+				<div class="login_field">
+					<div class="user_field_container">
+					<span class="user_text" style="font-weight: bold;">Usuário</span>
+						<input id="user_field_choose" class="user_field">
+					</div>
+					<div class="password_field_container">
+					<span class="password_text" style="font-weight: bold;">Senha</span>
+						<input id="password_field" class="user_field" type="password">
+					</div>
+					<div class="password_field_container">
+					<span class="password_text" style="font-weight: bold;">Confirmação de Senha</span>
+						<input id="password_field" class="user_field" type="password">
+					</div>
+					<div class="password_field_container">
+						<span class="password_text" style="font-weight: bold;">E-mail</span>
+							<input id="password_field" class="user_field" type="password">
+					</div>
+					<hr class="hr_line" style="margin-left: 0px; margin-top: 15px;">
+					<div class="register_text">
+						<span class="terms_of_use">Ao clicar em Cadastrar-se, você confirma que leu e reconhece os <a href="#">Termos de Serviço</a> e o <a href="#">Aviso de privacidade.</a></span></a>
+					</div>
+					<div class="register_buttons">
+						<button class="login_button" type="submit">Entrar</button>
+					</div>
+				</div>
+			</div>
 			<!-- CABEÇALHO-->
+		</div>
+		<div class="close_login_screen">
+			<a><ion-icon name="close-outline"></ion-icon></a>
+		</div>
+		<div class="rowbar_login_screen">
+
 		</div>
 	</div>
 	<!-- BARRA DE FERRAMENTAS -->

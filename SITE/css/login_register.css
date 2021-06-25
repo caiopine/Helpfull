@@ -1,2 +1,20 @@
 .login_and_register_screen {position: fixed; top: 0; bottom: 0; right: 0; left: 0px; padding-left: 100px; padding-right: 100px; align-items: center; background: rgb(0, 0, 0, 0.5); width: 100%; height: 1100px;}
-.login_screen{background: #fff; width: 35%; height: 40%; margin-left: auto; margin-right: auto; margin-top: 8%; border-radius: 10px;}
+.screen{font-family: sans-serif; padding: 30px; padding-bottom: 10px; background: #fff; width: 400px; height: fit-content; margin-left: auto; margin-right: auto; margin-top: 8%; border-radius: 10px;}
+.header_login{display: flex; align-items: center; padding-left: 20%; padding-right: 20%; width: 100%; height: 20%;} 
+.login_header_text{font-weight: bold; margin-left: 10px;}
+.hr_line{position: absolute; margin-top: 30px; margin-left: 15px; margin-right: 15px; width: 310px;}
+.switch_between{display: flex; padding-top: 30px; font-weight: bold; color: rgb(80, 80, 80);}
+.login_and_register_text{margin-left: 15px; cursor: pointer;}
+.login_field{color: rgb(80, 80, 80); padding-left: 15px;}
+.user_field_container{position: flex; margin-top: 35px;}
+.user_field{padding-left: 10px; margin-top: 10px; width: 310px; height: 25px; border-radius: 5px; border: 1px solid rgb(173, 173, 173);}
+.user_field:focus{outline: 0; padding-left: 10px; border: 2px solid hsl(36, 100%, 77%);;}
+.password_field_container{position: flex; margin-top: 15px; margin-bottom: 10px;}
+.password_field{padding-left: 10px; margin-top: 10px; width: 310px;}
+.password_field:focus{padding-left: 10px;}
+.login_problems{text-decoration: none; font-size: 13px;}
+.logins_buttons{margin-left: 15px; margin-top: 30px;}
+.login_button{width: 310px; height: 30px; background-color: hsl(36, 100%, 77%); text-decoration: none; border: none; border-radius: 5px; font-weight: bold;}
+.terms_of_use{text-decoration: none; font-size: 13px;}
+.register_text{margin-top: 45px; align-items: center; text-align: center;}
+.register_buttons{margin-top: 20px; align-items: center; text-align: center;}
