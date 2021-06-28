@@ -8,8 +8,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/navbar.css">
 		<link rel="stylesheet" href="css/login_register.css">
-		<!-- JAVA SCRIPT -->
-
+		<link rel="stylesheet" href="css/body.css">
 		<!-- ÍCONE DO SITE -->
 		<link rel="shortcut icon" href="images/icons/favicon.ico">
 	<!-- TÍTULO DA PÁGINA -->
@@ -18,75 +17,78 @@
 
 <body>
 	<!-- TELA DE LOGIN -->
-	<div class="login_and_register_screen" id="login_and_register_screen">
-		<div class="screen">
-			<!--  CABEÇALHO DO LOGIN, COM LOGO E BOAS VINDAS -->
-				<div class="header_login">
-					<img src="images/icons/favicon.ico">
-					<span class="login_header_text">Entrar na Helpfull</span>
-				</div>
-			<!-- TROCA ENTRE ENTRAR E CADASTRAR-SE -->
-				<div class="switch_between">
-					<p class="login_and_register_text">Entrar</p>
-					<p class="login_and_register_text">Cadastrar-se</p>
-					<hr class="hr_line">
-				</div>
-			<!-- OPÇÕES DE LOGIN -->
-			<div class="login_screen" id="login_screen" hidden>
-				<div class="login_field">
-					<div class="user_field_container">
-					<span class="user_text" style="font-weight: bold;">Usuário</span>
-						<input id="user_field" class="user_field">
+	<div class="login_and_register_screen" id="login_and_register_screen" style="display: none;">
+		<div class="allitensscreen">
+			<div class="screen">
+				<!--  CABEÇALHO DO LOGIN, COM LOGO E BOAS VINDAS -->
+					<div class="header_login">
+						<img src="images/icons/favicon.ico">
+						<span class="login_header_text">Entrar na Helpfull</span>
 					</div>
-					<div class="password_field_container">
-					<span class="password_text" style="font-weight: bold;">Senha</span>
-						<input id="password_field" class="user_field" type="password">
+				<!-- TROCA ENTRE ENTRAR E CADASTRAR-SE -->
+					<div class="switch_between">
+						<p class="login_and_register_text" onclick="open_login_screen()" id="logintext">Entrar</p>
+						<p class="login_and_register_text" onclick="open_register_screen()" id="registertext">Cadastrar-se</p>
+						<hr class="hr_line">
 					</div>
-					<a href="#"><span class="login_problems">Problemas para efetuar login?</span></a>
-					<hr class="hr_line" style="margin-left: 0px; margin-top: 15px;">
-				</div>
-				<div class="logins_buttons">
-					<button class="login_button" type="submit">Entrar</button>
-				</div>
-			</div>
-			<!-- OPÇÕES DE REGISTRO -->
-			<div class="register_screen" id="register_screen">
-				<div class="login_field">
-					<div class="user_field_container">
-					<span class="user_text" style="font-weight: bold;">Usuário</span>
-						<input id="user_field_choose" class="user_field">
-					</div>
-					<div class="password_field_container">
-					<span class="password_text" style="font-weight: bold;">Senha</span>
-						<input id="password_field" class="user_field" type="password">
-					</div>
-					<div class="password_field_container">
-					<span class="password_text" style="font-weight: bold;">Confirmação de Senha</span>
-						<input id="password_field" class="user_field" type="password">
-					</div>
-					<div class="password_field_container">
-						<span class="password_text" style="font-weight: bold;">E-mail</span>
+				<!-- OPÇÕES DE LOGIN -->
+				<div class="login_screen" id="loginscreen">
+					<div class="login_field">
+						<div class="user_field_container">
+						<span class="user_text" style="font-weight: bold;">Usuário</span>
+							<input id="user_field" class="user_field">
+						</div>
+						<div class="password_field_container">
+						<span class="password_text" style="font-weight: bold;">Senha</span>
 							<input id="password_field" class="user_field" type="password">
+						</div>
+						<a href="#"><span class="login_problems">Problemas para efetuar login?</span></a>
+						<hr class="hr_line" style="margin-left: 0px; margin-top: 15px;">
 					</div>
-					<hr class="hr_line" style="margin-left: 0px; margin-top: 15px;">
-					<div class="register_text">
-						<span class="terms_of_use">Ao clicar em Cadastrar-se, você confirma que leu e reconhece os <a href="#">Termos de Serviço</a> e o <a href="#">Aviso de privacidade.</a></span></a>
-					</div>
-					<div class="register_buttons">
+					<div class="logins_buttons">
 						<button class="login_button" type="submit">Entrar</button>
 					</div>
 				</div>
+				<!-- OPÇÕES DE REGISTRO -->
+				<div class="register_screen" id="registerscreen" hidden>
+					<div class="login_field">
+						<div class="user_field_container">
+						<span class="user_text" style="font-weight: bold;">Usuário</span>
+							<input id="user_field_choose" class="user_field">
+						</div>
+						<div class="password_field_container">
+						<span class="password_text" style="font-weight: bold;">Senha</span>
+							<input id="password_field" class="user_field" type="password">
+						</div>
+						<div class="password_field_container">
+						<span class="password_text" style="font-weight: bold;">Confirmação de Senha</span>
+							<input id="password_field" class="user_field" type="password">
+						</div>
+						<div class="password_field_container">
+							<span class="password_text" style="font-weight: bold;">E-mail</span>
+								<input id="password_field" class="user_field" type="password">
+						</div>
+						<hr class="hr_line" style="margin-left: 0px; margin-top: 15px;">
+						<div class="register_text">
+							<span class="terms_of_use">Ao clicar em Cadastrar-se, você confirma que leu e reconhece os <a href="#">Termos de Serviço</a> e o <a href="#">Aviso de privacidade.</a></span></a>
+						</div>
+						<div class="register_buttons">
+							<button class="login_button" type="submit">Entrar</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<!-- CABEÇALHO-->
-		</div>
-		<div class="close_login_screen">
-			<a><ion-icon name="close-outline"></ion-icon></a>
-		</div>
-		<div class="rowbar_login_screen">
+			<div class="closebuttonx">
+				<div class="background-circle">
+					<div class="icon" onclick="close_login_screen()"><ion-icon class="closeicon" name="close-outline"></ion-icon></div>
+				</div>
+			</div>
+			<div class="rowbar_login_screen">
 
+			</div>
 		</div>
 	</div>
-	<!-- BARRA DE FERRAMENTAS -->
+	<!-- BARRA DE NAVEGAÇÃO -->
 	<div class="header" id="header">
 		<!-- LOGOTIPO -->
 		<a href="HELPFULL.html"><img src="images/logotipo.png" alt="Helpfull" class="logo"></a>
@@ -97,39 +99,38 @@
 				<li class="nav-obj"><a href="#">Projetos Sociais</a></li>
 			</ul>
 			<!-- LISTA COM OPÇÕES AVANÇADAS, DE BUSCA E PERFIL -->
+			<!-- PESQUISA -->
 			<ul class="nav-list-2">
-				<!-- PESQUISA -->
-					<div class="background-circle">
-						<div class="icon"><ion-icon name="search-outline"></ion-icon></div>
-						<div class="input">
-							<input type="text" placeholder="Busca..." id="mysearch">
-						</div>
-						<script>
-							const icon = document.querySelector('.icon');
-							const search = document.querySelector('.background-circle');
-							icon.onclick = function(){
-								search.classList.toggle('active');
-							}
-						</script>
+				<div class="background-circle" id="searchmodule">
+					<div class="icon" onclick="showprofileoptions()"><ion-icon name="search-outline"></ion-icon></div>
+					<div class="input">
+						<input type="text" placeholder="Busca..." id="mysearch">
 					</div>
+					<script>
+						const search = document.getElementById('searchmodule');
+
+						function showprofileoptions(){
+							search.classList.toggle('active');
+						}
+					</script>
+				</div>
 			</ul>
+			<!-- PERFIL -->
 			<ul class="nav-list-3">
-				<!-- PERFIL -->
-					<div class="background-profile" id="profilebackground" hidden>
-						<div class="rounded-background-profile"></div>
-						<div class="squaded-background-profile"></div>
-						<div class="content-background-profile">
-							<a onclick="show_login_screen()"><div class="login-profile">
-								<p>Entrar</p>
-							</div></a>
-							<a href="helpfull.html/register"><div class="register-profile">
-								<p>Cadastrar-se</p>
-							</div></a>
-						</div>
+				<div class="background-profile" id="profilebackground" hidden>
+					<div class="rounded-background-profile"></div>
+					<div class="squaded-background-profile"></div>
+					<div class="content-background-profile">
+						<a onclick="show_login_screen()"><div class="login-profile">
+							<p>Entrar</p>
+						</div></a>
+						<a onclick="show_login_screen()"><div class="register-profile">
+							<p>Cadastrar-se</p>
+						</div></a>
 					</div>
-					<div class="background-circle" onclick="show_or_hide_profilemenu()">
-						<div class="icon" id="profilebtn"><ion-icon name="person-outline"></ion-icon></div>
-					</div>
+				</div>
+				<div class="background-circle" onclick="show_or_hide_profilemenu()">
+					<div class="icon" id="profilebtn"><ion-icon name="person-outline"></ion-icon></div>
 					<script>
 						profilebackground = document.getElementById('profilebackground');
 
@@ -141,8 +142,52 @@
 							profilebackground.setAttribute('hidden', true);
 						}}
 					</script>
+				</div>
 			</ul>
 	</div>
-	
+	<!-- PROJETOS POPULARES -->
+	<div class="popularprojects">
+		<h1>Projetos</h1>
+		<div class="card">
+			<img class="card-img-top" src="projects/projetorestauraçãoimagecard.png">
+			<div class="card-body">
+			  <h4 class="card-title">Projeto Resturação</h4>
+			  Duis bibendum lobortis elit, ut viverra dui convallis id. Quisque vitae purus eu sem maximus sollicitudin eu nec massa.
+			</div>        
+		  </div>
+	</div>
+	<!-- SCRIPT PARA A TROCA ENTRE CADASTRAR E ENTRAR -->
+	<script>
+		const login = document.getElementById('loginscreen');
+		const register = document.getElementById('registerscreen');
+		const logintext = document.getElementById('logintext');
+		const registertext = document.getElementById('registertext');
+		
+		function open_login_screen(){
+			login.removeAttribute('hidden');
+			register.setAttribute('hidden', true);
+
+			registertext.classList.remove('activatedtext');
+			logintext.classList.toggle('activatedtext');
+		}
+		function open_register_screen(){
+			register.removeAttribute('hidden');
+			login.setAttribute('hidden', true);
+
+			logintext.classList.remove('activatedtext');
+			registertext.classList.toggle('activatedtext');
+		}
+	</script>
+	<!-- SCRIPT PARA FECHAR E ABRIR A TELA DE LOGIN E CADASTRO -->
+	<script>
+		const loginandregisterscreen = document.getElementById('login_and_register_screen');
+
+		function close_login_screen(){
+			loginandregisterscreen.style.display = "none";
+		}
+		function show_login_screen(){
+			loginandregisterscreen.style.display = "inline-flex";
+		}
+	</script>
 </body>
 </html>

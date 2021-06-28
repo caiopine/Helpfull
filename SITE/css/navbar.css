@@ -9,7 +9,7 @@
 .nav-list-3{position: relative; display: flex; margin-left: 20px;}
 .nav-obj{list-style: none;}
 .nav-obj a {display: inline-flex; margin-left: 40px; text-decoration: none; color: #fff;}
-.background-circle{overflow: hidden; position:absolute; transition: 0.5s; position:sticky; background-color: #585858; width: 40px; height: 40px; align-items: center; border-radius: 20px;}
+.background-circle{overflow: hidden; transition: 0.5s; position:sticky; background-color: #585858; width: 40px; height: 40px; align-items: center; border-radius: 20px;}
 ion-icon{width: 100px; font-weight: bold;}
 /* SEARCH BAR */
 .background-circle .icon {display:block; color: #fff; cursor: pointer; position: absolute; top: 0; left: 0; width: 40px; height: 40px; background: #585858; border-radius: 60px; display: flex; justify-content: center; align-items: center; z-index: 1000;}
@@ -21,8 +21,10 @@ ion-icon{width: 100px; font-weight: bold;}
 .squaded-background-profile{justify-content: center; background-color: rgb(180, 180, 180); width: 230px; height: 155px; border-radius: 25px; position: absolute; transform: translate(-185px, 65px);}
 .content-background-profile{text-decoration: none;}
 .login-profile{font-family: sans-serif; text-align: center; justify-content: center; width: 80px; height: fit-content; background-color: hsl(36, 100%, 77%); color: #585858; transform: translate(-108px, 100px); position: absolute; font-size: 16px; padding-top: 6px; padding-bottom: 5px; border-radius: 5px; font-weight: bold; cursor: pointer;}
-.register-profile{font-family: sans-serif; text-align: center; justify-content: center; width: 130px; height: fit-content; background-color: hsl(36, 100%, 77%); color: #585858; transform: translate(-134px, 150px); position: absolute; font-size: 16px; padding-top: 6px; padding-bottom: 5px; border-radius: 5px; font-weight: bold; }
+.register-profile{font-family: sans-serif; text-align: center; justify-content: center; width: 130px; height: fit-content; background-color: hsl(36, 100%, 77%); color: #585858; transform: translate(-134px, 150px); position: absolute; font-size: 16px; padding-top: 6px; padding-bottom: 5px; border-radius: 5px; font-weight: bold; cursor: pointer;}
 a:link{
 	text-decoration: none;
 	color: #585858;
 }
+::-webkit-scrollbar{width: 10px;}
+::-webkit-scrollbar-track{border-radius: 5px;}
