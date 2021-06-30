@@ -1,2 +1,13 @@
-.projecttitle{margin-top: 60px; font-family: sans-serif; padding-top: 30px; padding-left: 100px;}
-.projectsubtitle{margin-top: 10px; font-family: sans-serif; padding-left: 100px; font-weight: lighter; font-size: 18px;}
+.projectheader{display: flex; margin-top: 60px; font-family: sans-serif; padding-top: 30px; padding-left: 100px; padding-right: 100px;}
+.projectprofilepicture{width: 100px; height: 100px; border-radius: 60px; border: solid 1px black;}
+.headertexts{margin-left: 20px;}
+.projectsubtitle{margin-top: 10px; font-family: sans-serif;font-weight: lighter; font-size: 18px;}
+.projectbody{padding-left: 100px; display: flex; margin-top: 15px; padding-right: 100px;}
+.projectbodyright{margin-left: 100px;}
+.projectbodyleft .projectvideo{border-radius: 5px;}
+.projectsocialnetworkcontainer{margin-left: 500px; padding-top: 40px; padding-bottom: 40px; display: flex;}
+.projectsocialnetworksbackground{background-color: #585858; width: 40px; height: 40px; border-radius: 30px; text-align: center; margin-left: 10px;}
+.projectsocialnetworks{width: 25px; height: 25px; margin-top: 8px;}
+.projectsocialnetworksyoutubelogo{width: 22px; height: 22px; margin-top: 9px;}
+ion-icon{color: #fff;}
+.projecttextdescription{font-family: sans-serif;}
