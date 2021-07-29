@@ -1,0 +1,33 @@
+* { 
+    width: 100%; height: 100%;
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    justify-content: center; align-items: center;
+    display: flex;
+    background-color: #333333;
+}
+
+.Header {
+    width: 70%; height: 30%;
+    text-align: center; align-items: center; justify-content: center;
+    margin-left: auto; margin-right: auto;
+    
+    transition-timing-function: ease;
+    transition-duration: 10s;
+    transition-delay: 5s;
+}
+
+.WelcomeText {
+    font-family: sans-serif, arial, helvetica;
+    width: 100%; height: 10%;
+    color: white;
+}
+
+.Logo {
+    margin-top: 30px;
+    width: 70%; height: 20%;
+    min-width: 315px; min-height: 83px;
+    max-width: 1.100px; max-height: 260px;
+}
