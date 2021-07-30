@@ -1,7 +1,11 @@
 /* ESPAÇO PARA VARIÁVEIS */
 :root {
     --background-color: rgb(245, 245, 245);
+    --box-shadow: rgb(200, 200, 200);
     --primary-color: #D88B1B;
-    --secundary-color: ;
     --primary-text-color: black;
+    --primary-icons-color: gray;
+    --hover-icons-color: #333333;
+    --hover-language-color: rgb(210, 210, 210);
+    
 }

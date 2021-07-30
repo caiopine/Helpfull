@@ -20,8 +20,7 @@
         <link rel="stylesheet" href="../css/FirstPageCss/leftcontainer.css">
         <!-- FERRAMENTAS -->
         <link rel="stylesheet" href="../css/FirstPageCss/tools.css">
-        <!-- LINK PARA ADIÇÃO DO JAVASCRIPT COM SUAS FUNCIONALIDADES; -->
-        <script src="../javascript/login.js"></script>
+        
     </head>
     <!-- CORPO DA PÁGINA; -->
     <body>
@@ -52,8 +51,17 @@
             </div>
         </div>
         <div class="BottomContainer">
-            <ion-icon class="icons" name="contrast-sharp"></ion-icon>
-            <ion-icon name="language-sharp"></ion-icon>
+            <div class="Tools">
+                <a id="ColorMode"><ion-icon class="Icons" name="contrast-sharp"></ion-icon></a>
+                <ion-icon class="Icons" name="globe-sharp" id="Language"></ion-icon>
+            </div>
+            <div class="LanguageList">
+                <div class="LanguageListOption">Português (Brasil)</div>
+                <div class="LanguageListOption">Inglês (US)</div>
+                <div class="LanguageListOption">Español</div>
+            </div>
         </div>
     </body>
+    <!-- LINK PARA ADIÇÃO DO JAVASCRIPT COM SUAS FUNCIONALIDADES; -->
+    <script src="../javascript/TranslateFirstPage.js"></script>
 </html>
