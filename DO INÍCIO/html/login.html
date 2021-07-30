@@ -20,9 +20,6 @@
         <link rel="stylesheet" href="../css/FirstPageCss/leftcontainer.css">
         <!-- FERRAMENTAS -->
         <link rel="stylesheet" href="../css/FirstPageCss/tools.css">
-        <!-- LINK PARA ADIÇÃO DO JAVASCRIPT COM SUAS FUNCIONALIDADES; -->
-        <script src="../javascript/ColorScheme.js"></script>
-        <script src="../javascript/Translate.js"></script>
     </head>
     <!-- CORPO DA PÁGINA; -->
     <body>
@@ -30,25 +27,25 @@
             <div class="LeftContainer">
                 <img class="Logo" src="../files/logo/BlackLogo.png">
                 <div class="TextsContainer">
-                    <h1 class="WelcomeTitle">Bem Vindo</h1>
-                    <p class="PresentationText">A Helpfull é uma plataforma com <br>a missão de mudar o mundo,
+                    <h1 id="WelcomeTitle" class="WelcomeTitle">Bem Vindo</h1>
+                    <p id="PresentationText" class="PresentationText">A Helpfull é uma plataforma com <br>a missão de mudar o mundo,
                     e<br> você é o protagonista nesta jornada.</p>
                 </div>
                 <div class="Buttons">
-                    <button class="LearnMoreButton">saiba como</button>
+                    <button id="LearnMoreButton" class="LearnMoreButton">saiba como</button>
                 </div>
             </div>
             <div class ="RightContainer">
                 <div class="LoginField">
                     <input class="Field" placeholder="Email ou usuário">
                     <input class="Field" placeholder="Senha">
-                    <button class="Button">Entrar</button>
-                    <a class="ForgetText" href="#">Esqueceu algo?</a>
+                    <button id="LoginButton" class="LoginButton Button">Entrar</button>
+                    <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
                 </div>
-                <hr>
+                <hr class="Horizontal-Line">
                 <div class="RegisterContainer">
-                    <button class="Button">Criar nova conta</button>
-                    <a class="BrowseAnonymously" href="#">Navegar Anonimamente</a>
+                    <button id="RegisterButton" class="RegisterButton Button">Criar nova conta</button>
+                    <a id="BrowseAnonymously" class="BrowseAnonymously" href="#">Navegar Anonimamente</a>
                 </div>
             </div>
         </div>
@@ -58,10 +55,13 @@
                 <a id="LanguageListButton"><ion-icon class="Icons" name="globe-sharp"></ion-icon></a>
             </div>
             <div id="LanguageList" class="LanguageList">
-                <div class="LanguageListOption">Português (Brasil)</div>
-                <div class="LanguageListOption">Inglês (US)</div>
-                <div class="LanguageListOption">Español</div>
+                <div id="PT-BR" class="LanguageListOption">Português (Brasil)</div>
+                <div id="EN-US" class="LanguageListOption">English (US)</div>
+                <div id="ES" class="LanguageListOption">Español</div>
             </div>
         </div>
     </body>
+    <!-- LINK PARA ADIÇÃO DO JAVASCRIPT COM SUAS FUNCIONALIDADES; -->
+    <script src="../javascript/ColorScheme.js"></script>
+    <script src="../javascript/Translate.js"></script>
 </html>

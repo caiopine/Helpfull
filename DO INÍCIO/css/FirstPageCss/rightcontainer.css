@@ -20,6 +20,11 @@
         text-align: center;
     }
 
+    .GlobalContainer .RightContainer .Horizontal-Line{
+        border: none; background-color: var(--primary-icons-color);
+        width: 100%; height: 1px;
+    }
+
     .GlobalContainer .RightContainer .LoginField {
         display: block;
     }
