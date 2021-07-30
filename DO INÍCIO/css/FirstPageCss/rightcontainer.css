@@ -1,0 +1,56 @@
+/* ESTILO QUE SERÁ APLICADO EM CELULARES */
+@media screen and (max-width: 720px) {
+    
+}
+
+/* ESTILO QUE SERÁ APLICADO EM TABLETS */
+@media screen and (min-width: 720px), screen and (max-width: 1024px) {
+    
+}
+
+/* ESTILO QUE SERÁ APLICADO EM DESKTOPS */
+@media screen and (min-width: 1024px) {
+    .GlobalContainer .RightContainer {
+        width: 40%; height: fit-content;
+        min-width: 430px;
+        margin-left: 30px;
+        box-shadow: 0px 0px 10px 0.5px rgb(200, 200, 200); border-radius: 2px;
+        padding: 25px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    .GlobalContainer .RightContainer .LoginField {
+        display: block;
+    }
+
+    .GlobalContainer .RightContainer .LoginField .Field {
+        width: 100%; height: 30px;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: var(--primary-color) 1px solid;
+        font-size: 15px;
+    }
+
+    .GlobalContainer .RightContainer .Button {
+        width: 100%; height: fit-content;
+        padding-left: 10px; padding-right: 10px; padding-top: 7px; padding-bottom: 7px;
+        margin-bottom: 10px;
+        color: black; background-color: var(--primary-color); border: none; border-radius: 5px;
+        font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 15px;
+        cursor: pointer;
+    }
+
+    .GlobalContainer hr {
+        margin: 15 0 15 0;
+    }
+
+    .GlobalContainer a {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+
+    .GlobalContainer a:hover {
+        text-decoration-line: underline;
+    }
+}

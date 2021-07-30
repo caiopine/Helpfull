@@ -1,0 +1,55 @@
+/* ESTILO QUE SERÁ APLICADO EM CELULARES */
+@media screen and (max-width: 720px) {
+    
+}
+
+/* ESTILO QUE SERÁ APLICADO EM TABLETS */
+@media screen and (min-width: 720px), screen and (max-width: 1024px) {
+    
+}
+
+/* ESTILO QUE SERÁ APLICADO EM DESKTOPS */
+@media screen and (min-width: 1024px) {
+    /* LADO ESQUERDO */
+    .GlobalContainer .LeftContainer {
+        width: 50%; height: fit-content;
+        margin-right: 30px;
+    }
+
+    .GlobalContainer .LeftContainer .Logo {
+        width: 410px; height: auto;
+    }
+
+    .GlobalContainer .LeftContainer .TextsContainer {
+        margin-top: 20px;
+        width: 100%; height: fit-content;
+        display: block;
+    }
+
+    .GlobalContainer .LeftContainer .TextsContainer .WelcomeTitle {
+        font-weight: 900;
+        font-size: 40px;
+        color: var(--primary-text-color);
+    }
+
+    .GlobalContainer .LeftContainer .TextsContainer .PresentationText {
+        width: 100%; height: 30%;
+        margin-top: 20px;
+        font-size: 24px; font-weight: 400;
+        text-align: left;
+        color: var(--primary-text-color);
+    }
+
+    .GlobalContainer .LeftContainer .Buttons {
+        margin-top: 20px;
+        width: 100%; height: fit-content;
+    }
+
+    .GlobalContainer .LeftContainer .Buttons .LearnMoreButton {
+        width: fit-content; height: fit-content;
+        padding-left: 10px; padding-right: 10px; padding-top: 7px; padding-bottom: 7px;
+        color: black; background-color: var(--primary-color); border: none; border-radius: 10px;
+        font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 15px;
+        cursor: pointer;
+    }
+}
