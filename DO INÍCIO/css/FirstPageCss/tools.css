@@ -28,6 +28,7 @@
 
         .BottomContainer .LanguageList {
             display: block; position: absolute;
+            visibility: hidden;
             width: fit-content; height: fit-content;
             padding: 10px;
             top: -100px; left: 46%;
@@ -37,11 +38,11 @@
 
         .BottomContainer .LanguageList .LanguageListOption {
             padding: 5px;
+            color: var(--primary-text-color);
         }
 
         .BottomContainer .LanguageList .LanguageListOption:hover {
             background-color: var(--hover-language-color); border-radius: 3px;
-
             cursor: pointer;
         }
     }
