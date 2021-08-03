@@ -5,14 +5,47 @@
 
     /* ESTILO QUE SERÁ APLICADO EM TABLETS */
     @media screen and (min-width: 720px), screen and (max-width: 1024px) {
-        
+        .BottomContainer .Tools {
+            width: 10%; height: 80%;
+            display: flex;
+        }
+
+        .BottomContainer .Tools .Icons {
+            color: var(--primary-icons-color);
+            width: 100%; height: 100%;
+            min-height: 20px;
+        }
+
+        .BottomContainer .Tools .Icons:hover {
+            color: var(--hover-icons-color);
+            cursor: pointer;
+        }
+
+        .BottomContainer .LanguageList {
+            display: block; position: absolute;
+            visibility: hidden;
+            width: fit-content; height: fit-content;
+            padding: 10px;
+            bottom: -75px; left: 45%;
+            background-color: var(--background-color); box-shadow: 0px 0px 10px 0.5px var(--box-shadow);; border-radius: 2px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .BottomContainer .LanguageList .LanguageListOption {
+            padding: 5px;
+            color: var(--primary-text-color);
+        }
+
+        .BottomContainer .LanguageList .LanguageListOption:hover {
+            background-color: var(--hover-language-color); border-radius: 3px;
+            cursor: pointer;
+        }
     }
 
     /* ESTILO QUE SERÁ APLICADO EM DESKTOPS */
     @media screen and (min-width: 1024px) {
         .BottomContainer .Tools {
             width: 10%;
-            display: flex;
         }
 
         .BottomContainer .Tools .Icons {

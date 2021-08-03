@@ -17,7 +17,18 @@ body {
 
 /* ESTILO QUE SERÁ APLICADO EM TABLETS */
 @media screen and (min-width: 720px), screen and (max-width: 1024px) {
-    
+    .GlobalContainer {
+        width: fit-content; height: fit-content;
+        margin-right: auto; margin-left: auto;
+        padding-top: 60px; padding-bottom: 30px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .BottomContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%; height: 5%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
