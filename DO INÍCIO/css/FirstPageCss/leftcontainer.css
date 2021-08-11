@@ -30,7 +30,7 @@
 
     .GlobalContainer .LeftContainer .Buttons {
         margin-top: 20px;
-        width: 100%; height: fit-content;
+        width: 100%;
     }
 
     .GlobalContainer .LeftContainer .Buttons .LearnMoreButton {
@@ -77,11 +77,11 @@
 
     .GlobalContainer .LeftContainer .Buttons {
         margin-top: 20px;
-        width: 100%; height: fit-content;
+        width: 100%;
     }
 
     .GlobalContainer .LeftContainer .Buttons .LearnMoreButton {
-        width: fit-content; height: fit-content;
+        width: fit-content; height: 2%;
         padding-left: 10px; padding-right: 10px; padding-top: 7px; padding-bottom: 7px;
         color: var(--primary-text-color); background-color: var(--primary-color); border: none; border-radius: 10px;
         font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 15px;
