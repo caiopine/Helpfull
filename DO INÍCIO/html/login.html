@@ -39,18 +39,23 @@
                     <button id="LearnMoreButton" class="LearnMoreButton">saiba como</button>
                 </div>
             </div>
-            <div class ="RightContainer">
-                <div class="LoginField">
-                    <input class="Field" placeholder="Email ou usuário">
-                    <input class="Field" placeholder="Senha" type="password">
-                    <button id="LoginButton" class="LoginButton Button">Entrar</button>
-                    <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
+            <div class="RightContainer1">
+                <div class ="RightContainer">
+                    <div class="LoginField">
+                        <form action="login.php" method="POST">
+                            <input name="usuario" class="Field" placeholder="Email ou usuário">
+                            <input class="Field" placeholder="Senha" type="password">
+                        </form>
+                        <button id="LoginButton" class="LoginButton Button">Entrar</button>
+                        <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
+                    </div>
+                    <hr class="Horizontal-Line">
+                    <div class="RegisterContainer">
+                        <button id="RegisterButton" class="RegisterButton Button">Criar nova conta</button>
+                        <a id="BrowseAnonymously" class="BrowseAnonymously" href="#">Navegar Anonimamente</a>
+                    </div>
                 </div>
-                <hr class="Horizontal-Line">
-                <div class="RegisterContainer">
-                    <button id="RegisterButton" class="RegisterButton Button">Criar nova conta</button>
-                    <a id="BrowseAnonymously" class="BrowseAnonymously" href="#">Navegar Anonimamente</a>
-                </div>
+                <div class="alert">Login ou senha incorretos</div>
             </div>
         </div>
         <div class="BottomContainer">

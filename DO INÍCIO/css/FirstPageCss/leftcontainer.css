@@ -1,17 +1,12 @@
-/* ESTILO QUE SERÁ APLICADO EM CELULARES */
-@media screen and (max-width: 720px) {
-    
-}
-
 /* ESTILO QUE SERÁ APLICADO EM TABLETS */
-@media screen and (min-width: 720px), screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     .GlobalContainer .LeftContainer {
         width: 100%; height: fit-content;
         justify-content: center; align-items: center; text-align: center;
     }
 
     .GlobalContainer .LeftContainer .Logo {
-        width: 70%;
+        width: 50%; height: 12%;
     }
 
     .GlobalContainer .LeftContainer .TextsContainer {
@@ -34,7 +29,7 @@
     }
 
     .GlobalContainer .LeftContainer .Buttons .LearnMoreButton {
-        width: fit-content; height: fit-content;
+        width: fit-content; height: 2%;
         padding-left: 10px; padding-right: 10px; padding-top: 7px; padding-bottom: 7px;
         color: var(--primary-text-color); background-color: var(--primary-color); border: none; border-radius: 10px;
         font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 15px;
