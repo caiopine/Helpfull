@@ -13,7 +13,7 @@
         width: 100%; height: 1px;
     }
 
-    .GlobalContainer .RightContainer .LoginField .Field {
+    .GlobalContainer .RightContainer .Field {
         width: 100%; height: 25px;
         padding: 15px;
         margin-bottom: 10px;
@@ -21,7 +21,7 @@
         font-size: 15px;
     }
 
-    .GlobalContainer .RightContainer .LoginField .Field:focus {
+    .GlobalContainer .RightContainer .Field:focus {
         width: 100%; height: 25px;
         padding: 15px;
         outline: none;
@@ -91,7 +91,7 @@
         display: block;
     }
 
-    .GlobalContainer .RightContainer .LoginField .Field {
+    .GlobalContainer .RightContainer .Field {
         width: 100%; height: 30px;
         padding: 15px;
         margin-bottom: 10px;
@@ -99,7 +99,7 @@
         font-size: 15px;
     }
 
-    .GlobalContainer .RightContainer .LoginField .Field:focus {
+    .GlobalContainer .RightContainer .Field:focus {
         width: 100%; height: 30px;
         padding: 15px;
         outline: none;

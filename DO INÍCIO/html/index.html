@@ -41,13 +41,21 @@
             </div>
             <div class="RightContainer1">
                 <div class ="RightContainer">
-                    <div class="LoginField">
+                    <div id="LoginField" class="LoginField">
                         <form action="login.php" method="POST">
                             <input name="usuario" class="Field" placeholder="Email ou usuário">
-                            <input class="Field" placeholder="Senha" type="password">
+                            <input name="senha" class="Field" placeholder="Senha" type="password">
                         </form>
                         <button id="LoginButton" class="LoginButton Button">Entrar</button>
                         <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
+                    </div>
+                    <div id="RegisterField" class="RegisterField" hidden>
+                        <form action="register.php" method="POST">
+                            <input name="usuario" class="Field" placeholder="Digite aqui seu nome de usuário.">
+                            <input name="email" class="Field" placeholder="Digite aqui seu email.">
+                            <input name="senha" class="Field" placeholder="Digite aqui sua senha.">
+                            <input name="senha" class="Field" placeholder="Confirme sua senha.">
+                        </form>
                     </div>
                     <hr class="Horizontal-Line">
                     <div class="RegisterContainer">
@@ -55,7 +63,7 @@
                         <a id="BrowseAnonymously" class="BrowseAnonymously" href="#">Navegar Anonimamente</a>
                     </div>
                 </div>
-                <div class="alert">Login ou senha incorretos</div>
+                <div class="alert" hidden>Login ou senha incorretos</div>
             </div>
         </div>
         <div class="BottomContainer">
