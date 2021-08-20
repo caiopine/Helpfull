@@ -49,17 +49,18 @@
                         <button id="LoginButton" class="LoginButton Button">Entrar</button>
                         <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
                     </div>
-                    <div id="RegisterField" class="RegisterField" hidden>
+                    <div id="RegisterField" class="RegisterField">
                         <form action="register.php" method="POST">
                             <input name="usuario" class="Field" placeholder="Digite aqui seu nome de usuário.">
                             <input name="email" class="Field" placeholder="Digite aqui seu email.">
                             <input name="senha" class="Field" placeholder="Digite aqui sua senha.">
                             <input name="senha" class="Field" placeholder="Confirme sua senha.">
                         </form>
+                        <button id="RegisterButton" class="LoginButton Button">Cadastrar</button>
                     </div>
                     <hr class="Horizontal-Line">
                     <div class="RegisterContainer">
-                        <button id="RegisterButton" class="RegisterButton Button">Criar nova conta</button>
+                        <button id="RegisterAndLoginButton" class="RegisterButton Button">Criar nova conta</button>
                         <a id="BrowseAnonymously" class="BrowseAnonymously" href="#">Navegar Anonimamente</a>
                     </div>
                 </div>
@@ -79,6 +80,10 @@
         </div>
     </body>
     <!-- LINK PARA ADIÇÃO DO JAVASCRIPT COM SUAS FUNCIONALIDADES; -->
-    <script src="../javascript/ColorScheme.js"></script>
-    <script src="../javascript/Translate.js"></script>
+        <!-- DARK MODE E BRIGHT MODE -->
+        <script src="../javascript/ColorScheme.js"></script>
+        <!-- TRADUZIR A PÁGINA -->
+        <script src="../javascript/Translate.js"></script>
+        <!-- TROCAR DA TELA DE LOGIN PARA A TELA DE REGISTRO -->
+        <script src="../javascript/ChangeFromLoginToRegister.js"></script>
 </html>

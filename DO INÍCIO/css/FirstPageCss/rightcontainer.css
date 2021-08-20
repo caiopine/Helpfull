@@ -67,7 +67,7 @@
     
     .GlobalContainer .RightContainer1 {
         justify-content: center; align-items: center; text-align: center;
-        width: 100%; 
+        width: 100%; height: fit-content;
     }
 }
 
@@ -89,6 +89,10 @@
 
     .GlobalContainer .RightContainer .LoginField {
         display: block;
+    }
+
+    .GlobalContainer .RightContainer .RegisterField {
+        display: none;
     }
 
     .GlobalContainer .RightContainer .Field {
@@ -146,6 +150,6 @@
     
     .GlobalContainer .RightContainer1 {
         justify-content: center; align-items: center; text-align: center;
-        display: block; width: 40%;
+        display: block; width: 40%; height: fit-content;
     }
 }
