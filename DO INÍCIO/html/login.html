@@ -1,0 +1,89 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+    <!-- PREPARATIVOS, ADIÇÃO DE EXTENSÕES, ADIÇÃO DE BIBLIOTECAS E ETC; -->
+    <head>
+        <!-- SUPORTE PARA OS CARACTÉRES DA LÍNGUA PORTUGUESA; -->
+        <meta charset="UTF-8">
+        <!-- ÍCONE DO SITE -->
+        <link rel="shortcut icon" href="../files/Icons/favicon.ico">
+        <!-- SUPORTE PARA O GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <!-- FAMÍLIA ROBOTO -->
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <!-- SUPORTE PARA IOICON -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- LINK PARA A PERSONALIZAÇÃO DA PÁGINA POR CSS; -->
+        <!-- VARIÁVEIS DO CSS E GLOBAL -->
+        <link rel="stylesheet" href="../css/FirstPageCss/global.css">
+        <link rel="stylesheet" href="../css/FirstPageCss/variaveis.css">
+        <!-- LADO DIREITO DO CONTAINER PRINCIPAL-->
+        <link rel="stylesheet" href="../css/FirstPageCss/rightcontainer.css">
+        <!-- LADO ESQUERDO DO CONTAINER PRINCIPAL-->
+        <link rel="stylesheet" href="../css/FirstPageCss/leftcontainer.css">
+        <!-- FERRAMENTAS -->
+        <link rel="stylesheet" href="../css/FirstPageCss/tools.css">
+        <!-- TÍTULO DA PÁGINA -->
+        <title>Helpfull</title>
+    </head>
+    <!-- CORPO DA PÁGINA; -->
+    <body>
+        <div class="GlobalContainer">
+            <div class="LeftContainer">
+                <img class="Logo" src="../files/logo/BlackLogo.png">
+                <div class="TextsContainer">
+                    <h1 id="WelcomeTitle" class="WelcomeTitle">Bem Vindo</h1>
+                    <p id="PresentationText" class="PresentationText">A Helpfull é uma plataforma com <br>a missão de mudar o mundo,
+                    e<br> você é o protagonista nesta jornada.</p>
+                </div>
+                <div class="Buttons">
+                    <button id="LearnMoreButton" class="LearnMoreButton">saiba como</button>
+                </div>
+            </div>
+            <div class="RightContainer1">
+                <div class ="RightContainer">
+                    <div id="LoginField" class="LoginField">
+                        <form action="login.php" method="POST">
+                            <input name="usuario" class="Field" placeholder="Email ou usuário">
+                            <input name="senha" class="Field" placeholder="Senha" type="password">
+                        </form>
+                        <button id="LoginButton" class="LoginButton Button">Entrar</button>
+                        <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
+                    </div>
+                    <div id="RegisterField" class="RegisterField">
+                        <form action="register.php" method="POST">
+                            <input name="usuario" class="Field" placeholder="Digite aqui seu nome de usuário.">
+                            <input name="email" class="Field" placeholder="Digite aqui seu email.">
+                            <input name="senha" class="Field" placeholder="Digite aqui sua senha.">
+                            <input name="senha" class="Field" placeholder="Confirme sua senha.">
+                        </form>
+                        <button id="RegisterButton" class="LoginButton Button">Cadastrar</button>
+                    </div>
+                    <hr class="Horizontal-Line">
+                    <div class="RegisterContainer">
+                        <button id="RegisterAndLoginButton" class="RegisterButton Button">Criar nova conta</button>
+                        <a id="BrowseAnonymously" class="BrowseAnonymously" href="#">Navegar Anonimamente</a>
+                    </div>
+                </div>
+                <div class="alert" hidden>Login ou senha incorretos</div>
+            </div>
+        </div>
+        <div class="BottomContainer">
+            <div class="Tools">
+                <a id="ColorModeButton"><ion-icon class="Icons" name="contrast-sharp"></ion-icon></a>
+                <a id="LanguageListButton"><ion-icon class="Icons" name="globe-sharp"></ion-icon></a>
+            </div>
+            <div id="LanguageList" class="LanguageList">
+                <div id="PT-BR" class="LanguageListOption">Português (Brasil)</div>
+                <div id="EN-US" class="LanguageListOption">English (US)</div>
+                <div id="ES" class="LanguageListOption">Español</div>
+            </div>
+        </div>
+    </body>
+    <!-- LINK PARA ADIÇÃO DO JAVASCRIPT COM SUAS FUNCIONALIDADES; -->
+        <!-- DARK MODE E BRIGHT MODE -->
+        <script src="../javascript/ColorScheme.js"></script>
+        <!-- TRADUZIR A PÁGINA -->
+        <script src="../javascript/Translate.js"></script>
+        <!-- TROCAR DA TELA DE LOGIN PARA A TELA DE REGISTRO -->
+        <script src="../javascript/ChangeFromLoginToRegister.js"></script>
+</html>
