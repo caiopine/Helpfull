@@ -18,10 +18,8 @@
         <link rel="stylesheet" href="../css/global/variaveis.css">
         <!-- BARRA DE NAVEGAÇÃO -->
         <link rel="stylesheet" href="../css/index/navbar.css">
-        <!-- LADO ESQUERDO DO CONTAINER PRINCIPAL-->
-        <link rel="stylesheet" href="../css/FirstPageCss/leftcontainer.css">
         <!-- FERRAMENTAS -->
-        <link rel="stylesheet" href="../css/FirstPageCss/tools.css">
+        <link rel="stylesheet" href="../css/login/tools.css">
         <!-- TÍTULO DA PÁGINA -->
         <title>Helpfull</title>
     </head>
@@ -102,33 +100,20 @@
         <nav class="header" id="header">
             <!-- LOGOTIPO -->
             <ul class="homebutton">
-                <a href="index.html" class="logo"><img src="../files/logo/BlackLogo.png"></a>
+                <a href="index.html" class="logo"><img src="../files/logo/WhiteLogo.png"></a>
             </ul>
             <!-- LISTA DE OPÇÕES -->
                 <!-- LISTA COM OPÇÕES SIMPLES, DE REDIRECIONAMENTO -->
-                <ul class="nav-list-1">
+                <ul class="redirect-list">
                     <li class="nav-obj"><a href="#">Sobre Nós</a></li>
-                    <li class="nav-obj"><a href="#">Projetos Sociais</a></li>
                 </ul>
                 <!-- LISTA COM OPÇÕES AVANÇADAS, DE BUSCA E PERFIL -->
                 <!-- PESQUISA -->
-                <ul class="nav-list-2">
-                    <div class="background-circle" id="searchmodule">
-                        <div class="icon" onclick="showprofileoptions()"><ion-icon name="search-outline"></ion-icon></div>
-                        <div class="input">
-                            <input type="text" placeholder="Busca..." id="mysearch">
-                        </div>
-                        <script>
-                            const search = document.getElementById('searchmodule');
-    
-                            function showprofileoptions(){
-                                search.classList.toggle('active');
-                            }
-                        </script>
-                    </div>
+                <ul class="search">
+                    <a class="search-button"><ion-icon class="icon" name="search-outline"></ion-icon></a>
                 </ul>
                 <!-- PERFIL -->
-                <ul class="nav-list-3">
+                <ul class="nav-list-3" hidden>
                     <div class="background-profile" id="profilebackground" hidden>
                         <div class="rounded-background-profile"></div>
                         <div class="squaded-background-profile"></div>
