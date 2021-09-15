@@ -42,7 +42,7 @@
             <div class="RightContainer1">
                 <div class ="RightContainer">
                     <div id="LoginField" class="LoginField">
-                        <form action="login.php" method="POST">
+                        <form method="POST">
                             <input name="usuario" class="Field" placeholder="Email ou usuário">
                             <input name="senha" class="Field" placeholder="Senha" type="password">
                         </form>
@@ -50,13 +50,13 @@
                         <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
                     </div>
                     <div id="RegisterField" class="RegisterField">
-                        <form action="cadastro.php" method="POST">
+                        <form name="frm_criar_conta" method="POST">
                             <input class="Field" placeholder="Digite aqui seu nome de usuário." name="usuario" required type="text" size="40" maxlength="40">
                             <input class="Field" placeholder="Digite aqui seu email." name="email" required  type="text" size="60" maxlength="60">
                             <input class="Field" placeholder="Digite aqui sua senha." name="senha" required  type="text" size="60" maxlength="60">
                             <input class="Field" placeholder="Confirme sua senha." name="senha">
                         </form>
-                        <button id="RegisterButton" class="LoginButton Button">Cadastrar</button>
+                        <input type="submit" id="RegisterButton" class="LoginButton Button" name="cadastrar" onclick="document.frm_criar_conta.action='criar.php'"></button>
                     </div>
                     <hr class="Horizontal-Line">
                     <div class="RegisterContainer">
