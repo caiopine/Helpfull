@@ -43,9 +43,9 @@
                 <div class ="RightContainer">
                     <div id="LoginField" class="LoginField">
                         <form method="POST" name="frm_login">
-                            <input name="usuario" class="Field" placeholder="Email ou usuário">
-                            <input name="senha" class="Field" placeholder="Senha" type="password">
-                            <input type="submit" id="LoginButton" class="LoginButton Button" name="entrar" onclick="document.frm_login.action='login.php'"></button>
+                            <input name="usuario" class="Field" placeholder="Email ou usuário" required>
+                            <input name="senha" class="Field" placeholder="Senha" type="password" required>
+                            <input type="submit" id="LoginButton" class="LoginButton Button" name="entrar" value="Entrar" onclick="document.frm_login.action='php/login.php'"></button>
                         </form>
                         <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
                     </div>
@@ -54,7 +54,7 @@
                             <input class="Field" placeholder="Digite aqui seu nome de usuário." name="usuario" required type="text" size="40" maxlength="40">
                             <input class="Field" placeholder="Digite aqui seu email." name="email" required  type="text" size="60" maxlength="60">
                             <input class="Field" placeholder="Digite aqui sua senha." name="senha" required  type="password" size="60" maxlength="60">
-                            <input type="submit" id="RegisterButton" class="LoginButton Button" name="cadastrar" onclick="document.frm_register.action='php/register.php'"></button>
+                            <input type="submit" id="RegisterButton" class="LoginButton Button" name="cadastrar" value="Cadastrar" onclick="document.frm_register.action='php/register.php'"></button>
                         </form>
                     </div>
                     <hr class="Horizontal-Line">

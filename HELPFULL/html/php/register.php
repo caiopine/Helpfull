@@ -12,7 +12,8 @@
         echo "<hr>";
         echo "Este nome de usuário ou email já está em uso.";
         echo "<hr>";
-        echo "<br";
+        echo "<br>";
+        echo "<a href=\"login.html\">Retornar ao Cadastro</a>";
     }
 
     else {
@@ -23,5 +24,6 @@
         echo "Conta criada com sucesso.";
         echo "<hr>";
         echo "<br";
+        echo "<a href=\"index.html\">Continuar para a página</a>";
     }
 ?>
