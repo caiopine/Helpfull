@@ -16,7 +16,7 @@
     }
 
     else {
-        $sql = mysql_query("insert into tb_login (USUARIO, EMAIL, SENHA) values ("$usuario", "$email", "$senha")");
+        $sql = mysql_query("insert into tb_login (USUARIO, EMAIL, SENHA) values ($usuario, $email, $senha)");
 
         echo "<center>";
         echo "<hr>";
