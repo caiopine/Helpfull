@@ -7,6 +7,7 @@
 @media screen and (min-width: 1024px) {
     .body {
         background-color: var(--background-color);
+        font-family: 'Roboto';
     }
 
     .header {
@@ -16,6 +17,7 @@
         display: flex;
         align-items: center; text-align: center;
         box-shadow: 0px 0px 10px 0.5px var(--box-shadow);
+        justify-content: center; align-items: center; text-align: center;
     }
 
     .header .HomeButton {
@@ -42,7 +44,7 @@
 
     .header .Search .SearchIcon {
         width: 20px; height: 20px;
-        color: var(--hover-icons-color);
+        color: var(--primary-icons-color);
     }
     .header .Search .SearchInput {
         width: 125px; height: 75%;
@@ -53,7 +55,7 @@
 
     .header .Feeds {
         width: 250px; align-self: center;
-        padding-top: 5px; padding-bottom: 5px; margin-left: 30%; margin-right: 30%;
+        padding-top: 5px; padding-bottom: 5px; margin-left: 30%; margin-right: 15%;
         justify-content: center; align-items: center; text-align: center;
         display: flex;
     }
@@ -89,6 +91,42 @@
 
     .header .Feeds .Favorites .FavoritesIcon {
         width: 32px; height: 32px;
+        color: var(--primary-icons-color);
+    }
+
+    .header .UserAndConfigContainer {
+        width: fit-content;
+        padding-top: 5px; padding-bottom: 5px;
+        justify-content: center; align-items: center; text-align: center;
+        display: flex;
+    }
+
+    .header .UserAndConfigContainer .User {
+        width: 100px;
+        padding: 5px;
+        display: flex;
+        background-color: var(--header-second-color); border-radius: 20px;
+    }
+    
+    .header .User .UserPicture {
+        color: var(--primary-icons-color);
+        max-width: 30px; max-height: 30px;
+        background: var(--header-color); border-radius: 100%;
+    }
+
+    .header .User .UserName {
+        margin-top: 7px; font-family: 'Roboto';
+    }
+
+    .header .Config {
+        width: 40px; height: 40px;
+        margin-left: 2.5px; margin-right: 2.5px;
+        padding-top: 3px;
+        background-color: var(--header-second-color); border-radius: 100%;
+    }
+
+    .header .Confing .ConfigIcon {
+        width: 30px;
         color: var(--primary-icons-color);
     }
 }
