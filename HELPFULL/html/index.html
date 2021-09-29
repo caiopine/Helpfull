@@ -25,198 +25,52 @@
     </head>
     <!-- CORPO DA PÁGINA; -->
     <body>
-        <div class="login_and_register_screen" id="login_and_register_screen" style="display: none;">
-            <div class="allitensscreen">
-                <div class="screen">
-                    <!--  CABEÇALHO DO LOGIN, COM LOGO E BOAS VINDAS -->
-                        <div class="header_login">
-                            <img src="images/icons/favicon.ico">
-                            <span class="login_header_text">Entrar na Helpfull</span>
-                        </div>
-                    <!-- TROCA ENTRE ENTRAR E CADASTRAR-SE -->
-                        <div class="switch_between">
-                            <p class="login_and_register_text" onclick="open_login_screen()" id="logintext">Entrar</p>
-                            <p class="login_and_register_text" onclick="open_register_screen()" id="registertext">Cadastrar-se</p>
-                            <hr class="hr_line">
-                        </div>
-                    <!-- OPÇÕES DE LOGIN -->
-                    <div class="login_screen" id="loginscreen">
-                        <div class="login_field">
-                            <div class="user_field_container">
-                            <span class="user_text" style="font-weight: bold;">Usuário</span>
-                                <input id="user_field" class="user_field">
-                            </div>
-                            <div class="password_field_container">
-                            <span class="password_text" style="font-weight: bold;">Senha</span>
-                                <input id="password_field" class="user_field" type="password">
-                            </div>
-                            <a href="#"><span class="login_problems">Problemas para efetuar login?</span></a>
-                            <hr class="hr_line" style="margin-left: 0px; margin-top: 15px;">
-                        </div>
-                        <div class="logins_buttons">
-                            <button class="login_button" type="submit">Entrar</button>
-                        </div>
-                    </div>
-                    <!-- OPÇÕES DE REGISTRO -->
-                    <div class="register_screen" id="registerscreen" hidden>
-                        <div class="login_field">
-                            <div class="user_field_container">
-                            <span class="user_text" style="font-weight: bold;">Usuário</span>
-                                <input id="user_field_choose" class="user_field">
-                            </div>
-                            <div class="password_field_container">
-                            <span class="password_text" style="font-weight: bold;">Senha</span>
-                                <input id="password_field" class="user_field" type="password">
-                            </div>
-                            <div class="password_field_container">
-                            <span class="password_text" style="font-weight: bold;">Confirmação de Senha</span>
-                                <input id="password_field" class="user_field" type="password">
-                            </div>
-                            <div class="password_field_container">
-                                <span class="password_text" style="font-weight: bold;">E-mail</span>
-                                    <input id="password_field" class="user_field" type="password">
-                            </div>
-                            <hr class="hr_line" style="margin-left: 0px; margin-top: 15px;">
-                            <div class="register_text">
-                                <span class="terms_of_use">Ao clicar em Cadastrar-se, você confirma que leu e reconhece os <a href="#">Termos de Serviço</a> e o <a href="#">Aviso de privacidade.</a></span></a>
-                            </div>
-                            <div class="register_buttons">
-                                <button class="login_button" type="submit">Entrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="closebuttonx">
-                    <div class="background-circle">
-                        <div class="icon" onclick="close_login_screen()"><ion-icon class="closeicon" name="close-outline"></ion-icon></div>
-                    </div>
-                </div>
-                <div class="rowbar_login_screen">
-    
-                </div>
-            </div>
-        </div>
         <!-- BARRA DE NAVEGAÇÃO -->
-        <nav class="header" id="header">
+        <div class="header" id="header">
             <!-- LOGOTIPO -->
-            <ul class="homebutton">
                 <a href="index.html" class="logo"><img src="../files/logo/WhiteLogo.png"></a>
-            </ul>
             <!-- LISTA DE OPÇÕES -->
                 <!-- LISTA COM OPÇÕES SIMPLES, DE REDIRECIONAMENTO -->
                 <ul class="redirect-list">
-                    <li class="nav-obj"><a href="#">Sobre Nós</a></li>
+                    <li class="redirect-obj"><a href="#">Sobre Nós</a></li>
                 </ul>
                 <!-- LISTA COM OPÇÕES AVANÇADAS, DE BUSCA E PERFIL -->
-                <!-- PESQUISA -->
-                <ul class="search">
-                    <a class="search-button"><ion-icon class="icon" name="search-outline"></ion-icon></a>
-                </ul>
-                <!-- PERFIL -->
-                <ul class="nav-list-3" hidden>
-                    <div class="background-profile" id="profilebackground" hidden>
-                        <div class="rounded-background-profile"></div>
-                        <div class="squaded-background-profile"></div>
-                        <div class="content-background-profile">
-                            <a onclick="show_login_screen()"><div class="login-profile">
-                                <p>Entrar</p>
-                            </div></a>
-                            <a onclick="show_login_screen()"><div class="register-profile">
-                                <p>Cadastrar-se</p>
-                            </div></a>
+                <div class="functions-container">
+                    <!-- PESQUISA -->
+                    <ul class="search">
+                        <a class="search-button"><ion-icon class="icon" name="search-outline"></ion-icon></a>
+                    </ul>
+                    <!-- PERFIL -->
+                    <ul class="nav-list-3" hidden>
+                        <div class="background-profile" id="profilebackground" hidden>
+                            <div class="rounded-background-profile"></div>
+                            <div class="squaded-background-profile"></div>
+                            <div class="content-background-profile">
+                                <a onclick="show_login_screen()"><div class="login-profile">
+                                    <p>Entrar</p>
+                                </div></a>
+                                <a onclick="show_login_screen()"><div class="register-profile">
+                                    <p>Cadastrar-se</p>
+                                </div></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="background-circle" onclick="show_or_hide_profilemenu()">
-                        <div class="icon" id="profilebtn"><ion-icon name="person-outline"></ion-icon></div>
-                        <script>
-                            profilebackground = document.getElementById('profilebackground');
-    
-                            function show_or_hide_profilemenu(){
-                            if (profilebackground.getAttribute('hidden', true)){
-                                profilebackground.removeAttribute('hidden');
-                            }
-                            else{
-                                profilebackground.setAttribute('hidden', true);
-                            }}
-                        </script>
-                    </div>
-                </ul>
+                        <div class="background-circle" onclick="show_or_hide_profilemenu()">
+                            <div class="icon" id="profilebtn"><ion-icon name="person-outline"></ion-icon></div>
+                            <script>
+                                profilebackground = document.getElementById('profilebackground');
+        
+                                function show_or_hide_profilemenu(){
+                                if (profilebackground.getAttribute('hidden', true)){
+                                    profilebackground.removeAttribute('hidden');
+                                }
+                                else{
+                                    profilebackground.setAttribute('hidden', true);
+                                }}
+                            </script>
+                        </div>
+                    </ul>
+                </div>
         </nav>
-        <!-- PROJETOS POPULARES -->
-            <div class="popularprojects">
-                <h1>Projetos Populares</h1>
-                <div class="cardrow">
-                    <!-- FUNDAÇÃO ABRINQ -->
-                    <a href="projects/Fundação ABRINQ/fundacaoabrinq.html" class="clickablebutton"><div class="card">
-                        <img class="card-img-top" src="projects/Fundação ABRINQ/imagecard.png" style="width: 50%; margin-left: 65px; margin-right: 100px;">
-                        <div class="card-body">
-                            <h4 class="card-title">Fundação ABRINQ</h4>
-                            <p class="card-description">
-                                Diante das inúmeras violações aos direitos de crianças e adolescentes, como homicídios e
-                                trabalho infantil no Brasil, a Associação Brasileira dos Fabricantes de Brinquedos (Abrinq)
-                                instituiu o Comitê de Proteção aos Direitos da Criança em 1989.
-                            </p>
-                        </div>
-                    </div></a>
-                    <!-- PROJETO RESTAURAÇÃO -->
-                    <a href="helpfull.html" class="clickablebutton"><div class="card">
-                        <img class="card-img-top" src="projects/Projeto Restauração/imagecard.png">
-                        <div class="card-body">
-                            <h4 class="card-title">Projeto Resturação</h4>
-                            <p class="card-description">
-                                O Projeto Restauração visa atender a
-                                população carente da Zona Leste de São Paulo oferecendo
-                                aulas de reforço escolar, língua estrangeira
-                                (Inglês), aulas de Capoeira, aulas de Muay Thai, além de promover
-                                festas e brincadeiras para crianças e adolescentes.
-                            </p>
-                        </div>
-                    </div></a>
-                    <!-- PROJETO LOCOMOTIVA -->
-                    <a href="helpfull.html" class="clickablebutton"><div class="card">
-                        <img class="card-img-top" src="projects/Projeto Locomotivo/imagecard.png">
-                        <div class="card-body">
-                            <h4 class="card-title">Projeto Locomotiva</h4>
-                            <p class="card-description">
-                                O Projeto Locomotiva é uma organização sem fins lucrativos que visa, por meio da música,
-                                ascender socialmente crianças e adolescentes de São Paulo, Santo André e Mauá.
-                            </p>
-                        </div>
-                    </div></a>
-                </div>
-                <div class="cardrow">
-                    <!-- ENTREGA EM SP -->
-                    <a href="helpfull.html" class="clickablebutton"><div class="card">
-                        <img class="card-img-top" src="projects/Entrega em SP/imagecard.jpeg" style="width: 100%; height: 40%; margin-left: 0px;">
-                        <div class="card-body">
-                            <h4 class="card-title">ENTREGA EM SP</h4>
-                            <p class="card-description">
-                                Entrega em SP, tem como objetivo amenizar as péssimas condições de quem vive nas ruas, principalmente em tempos muito gelados, dando alimento, cobertores, e etc, está em atividade desde de 2013, em São Paulo, praça Charles Miller.
-                            </p>
-                        </div>
-                    </div></a>
-                    <!-- SP INVISÍVEL -->
-                    <a href="helpfull.html" class="clickablebutton"><div class="card">
-                        <img class="card-img-top" src="projects/SP Invisivel/imagecard.jpg" style="width: 100%; height: 40%; margin-left: 0px;">
-                        <div class="card-body">
-                            <h4 class="card-title">SP INVISIVEL</h4>
-                            <p class="card-description">
-                                O SP Invisível é um movimento de humanização dos olhares da sociedade através de histórias dos invisíveis de São Paulo.... Buscamos conectar da sociedade com a população de rua através das nossas redes e ações sociais!
-                            </p>
-                        </div>
-                    </div></a>
-                    <!-- HAMBURGADA DO BEM -->
-                    <a href="helpfull.html" class="clickablebutton"><div class="card">
-                        <img class="card-img-top" src="projects/Hamburgada do Bem
-                        /imagecard.jpg" style="width: 100%; height: 40%; margin-left: 0px;">
-                        <div class="card-body">
-                            <h4 class="card-title">Hamburgada do Bem</h4>
-                            <p class="card-description">
-                                HAMBURGADA DO BEM é um projeto de amigos (inclusive você :)) que mensalmente distribui hambúrgueres, muita recreação  e informação em comunidades carentes.						</p>
-                        </div>
-                    </div></a>
-                </div>
-            </div>
         <div class="BottomContainer">
             <div class="Tools">
                 <a id="ColorModeButton"><ion-icon class="Icons" name="contrast-sharp"></ion-icon></a>
