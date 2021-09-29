@@ -12,7 +12,7 @@
     .header {
         background-color: var(--header-color);
         width: 100%; height: 50px;
-        padding: 0px 0px 0px 25px;
+        padding: 0px 25px 0px 25px;
         display: flex;
         align-items: center; text-align: center;
         box-shadow: 0px 0px 10px 0.5px var(--box-shadow);
@@ -21,6 +21,10 @@
     .header .HomeButton {
         width: 35px; height: 35px;
         margin-right: 10px;
+    }
+
+    .header .Search {
+        width: 35px;
     }
 
     .header .Search .SearchBackground {
@@ -42,8 +46,49 @@
     }
     .header .Search .SearchInput {
         width: 125px; height: 75%;
-        margin-left: 20px; margin-top: 1px;
-        background: none; outline: none;
-        display: none;
+        margin-left: 15px; margin-top: 1px;
+        background: none; outline: none; border: none;
+        display: none; transition: .3s;
+    }
+
+    .header .Feeds {
+        width: 250px; align-self: center;
+        padding-top: 5px; padding-bottom: 5px; margin-left: 30%; margin-right: 30%;
+        justify-content: center; align-items: center; text-align: center;
+        display: flex;
+    }
+
+    .header .Feeds .Timeline {
+        width: 75px;
+        margin-left: 2.5px; margin-right: 2.5px;
+        padding-top: 3px;
+        border-bottom: 2px solid var(--primary-color); border-radius: 5px;
+    }
+
+    .header .Feeds .Timeline:hover {
+        background-color: var(--header-second-color); border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .header .Feeds .Timeline .TimelineIcon {
+        width: 32px; height: 32px;
+        color: var(--primary-icons-color);
+    }
+
+    .header .Feeds .Favorites {
+        width: 75px;
+        margin-left: 2.5px; margin-right: 2.5px;
+        padding-top: 3px;
+        border-radius: 5px;
+    }
+
+    .header .Feeds .Favorites:hover {
+        background-color: var(--header-second-color); border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .header .Feeds .Favorites .FavoritesIcon {
+        width: 32px; height: 32px;
+        color: var(--primary-icons-color);
     }
 }

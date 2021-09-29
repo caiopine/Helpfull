@@ -12,7 +12,8 @@ function ActivateSearchBar() {
 
         SearchBackground.style.setProperty('width', '175px');
         SearchButton.style.setProperty('transform', 'translateX(0px)');
-        SearchInput.style.setProperty('display', 'unset')
+        setTimeout(function(){
+        SearchInput.style.setProperty('display', 'unset');}, 135);
     }
 
     else {
@@ -20,6 +21,7 @@ function ActivateSearchBar() {
 
         SearchBackground.style.setProperty('width', '35px');
         SearchButton.style.setProperty('transform', 'translateX(0px)');
-        SearchInput.style.setProperty('display', 'none')
+        setTimeout(function(){
+        SearchInput.style.setProperty('display', 'none');}, 20);
     }
 }
