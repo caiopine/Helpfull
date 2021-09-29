@@ -28,10 +28,15 @@
         <!-- BARRA DE NAVEGAÇÃO -->
         <div class="header">
             <!-- BOTÃO HOME / LOGO -->
-            <div class="HomeButton"><img src="../files/Icons/favicon.ico"></div>
+            <a class="HomeButton" href="index.html"><img src="../files/Icons/favicon.ico"></a>
             <!-- BOTÃO DE PESQUISA -->
             <div class="Search">
-                <div class="SearchBackground"><ion-icon class="SearchIcon" name="search-outline"></ion-icon></div>
+                <div class="SearchBackground" id="SearchBackground">
+                    <input id="SearchInput" class="SearchInput">
+                    <div class="SearchButton" id="SearchButton">
+                        <ion-icon class="SearchIcon" name="search-outline"></ion-icon>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
@@ -40,6 +45,6 @@
         <script src="../javascript/ColorScheme.js"></script>
         <!-- TRADUZIR A PÁGINA -->
         <script src="../javascript/Translate.js"></script>
-        <!-- TROCAR DA TELA DE LOGIN PARA A TELA DE REGISTRO -->
-        <script src="../javascript/ChangeFromLoginToRegister.js"></script>
+        <!-- BARRA DE PESQUISA -->
+        <script src="../javascript/SlideSearchbar.js"></script>
 </html>

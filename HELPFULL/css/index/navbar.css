@@ -23,14 +23,27 @@
         margin-right: 10px;
     }
 
-    .header .Search {
+    .header .Search .SearchBackground {
         width: 35px; height: 35px;
+        margin-top: 7.5px;
         background-color: var(--header-second-color); border-radius: 100vh;
-        align-items: center; text-align: center; justify-content: center;
+        justify-content: center; align-items: center; text-align: center;
+        transition: 0.3s;
+        display: flex;
     }
+
+    .header .Search .SearchButton {
+        cursor: pointer; padding: 7.5px; 
+    }
+
     .header .Search .SearchIcon {
         width: 20px; height: 20px;
         color: var(--hover-icons-color);
-        padding: 7.5px;
+    }
+    .header .Search .SearchInput {
+        width: 125px; height: 75%;
+        margin-left: 20px; margin-top: 1px;
+        background: none; outline: none;
+        display: none;
     }
 }
