@@ -26,60 +26,12 @@
     <!-- CORPO DA PÁGINA; -->
     <body>
         <!-- BARRA DE NAVEGAÇÃO -->
-        <div class="header" id="header">
-            <!-- LOGOTIPO -->
-                <a href="index.html" class="logo"><img src="../files/logo/WhiteLogo.png"></a>
-            <!-- LISTA DE OPÇÕES -->
-                <!-- LISTA COM OPÇÕES SIMPLES, DE REDIRECIONAMENTO -->
-                <ul class="redirect-list">
-                    <li class="redirect-obj"><a href="#">Sobre Nós</a></li>
-                </ul>
-                <!-- LISTA COM OPÇÕES AVANÇADAS, DE BUSCA E PERFIL -->
-                <div class="functions-container">
-                    <!-- PESQUISA -->
-                    <ul class="search">
-                        <a class="search-button"><ion-icon class="icon" name="search-outline"></ion-icon></a>
-                    </ul>
-                    <!-- PERFIL -->
-                    <ul class="nav-list-3" hidden>
-                        <div class="background-profile" id="profilebackground" hidden>
-                            <div class="rounded-background-profile"></div>
-                            <div class="squaded-background-profile"></div>
-                            <div class="content-background-profile">
-                                <a onclick="show_login_screen()"><div class="login-profile">
-                                    <p>Entrar</p>
-                                </div></a>
-                                <a onclick="show_login_screen()"><div class="register-profile">
-                                    <p>Cadastrar-se</p>
-                                </div></a>
-                            </div>
-                        </div>
-                        <div class="background-circle" onclick="show_or_hide_profilemenu()">
-                            <div class="icon" id="profilebtn"><ion-icon name="person-outline"></ion-icon></div>
-                            <script>
-                                profilebackground = document.getElementById('profilebackground');
-        
-                                function show_or_hide_profilemenu(){
-                                if (profilebackground.getAttribute('hidden', true)){
-                                    profilebackground.removeAttribute('hidden');
-                                }
-                                else{
-                                    profilebackground.setAttribute('hidden', true);
-                                }}
-                            </script>
-                        </div>
-                    </ul>
-                </div>
-        </nav>
-        <div class="BottomContainer">
-            <div class="Tools">
-                <a id="ColorModeButton"><ion-icon class="Icons" name="contrast-sharp"></ion-icon></a>
-                <a id="LanguageListButton"><ion-icon class="Icons" name="globe-sharp"></ion-icon></a>
-            </div>
-            <div id="LanguageList" class="LanguageList">
-                <div id="PT-BR" class="LanguageListOption">Português (Brasil)</div>
-                <div id="EN-US" class="LanguageListOption">English (US)</div>
-                <div id="ES" class="LanguageListOption">Español</div>
+        <div class="header">
+            <!-- BOTÃO HOME / LOGO -->
+            <div class="HomeButton"><img src="../files/Icons/favicon.ico"></div>
+            <!-- BOTÃO DE PESQUISA -->
+            <div class="Search">
+                <div class="SearchBackground"><ion-icon class="SearchIcon" name="search-outline"></ion-icon></div>
             </div>
         </div>
     </body>

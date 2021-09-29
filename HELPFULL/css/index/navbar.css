@@ -5,49 +5,32 @@
 
 /* ESTILO QUE SERÁ APLICADO EM DESKTOPS */
 @media screen and (min-width: 1024px) {
+    .body {
+        background-color: var(--background-color);
+    }
+
     .header {
-        position: absolute; display: flex;
-        width: 100%; height: 8%;
-        padding-left: 4%; padding-right: 4%;
-        padding-top: 15px; padding-bottom: 15px;
-        background-color: #333333;
-        font-family: 'Roboto', sans-serif;
-        align-items: center;
-    }
-
-    li {list-style: none; text-decoration: none; color: white;}
-    
-    .header .logo {
-        margin-right: 10%;
-        object-fit: contain;
-        max-width: 10%; max-height: 110%;
-    }
-
-    .header .redirect-list {
+        background-color: var(--header-color);
+        width: 100%; height: 50px;
+        padding: 0px 0px 0px 25px;
         display: flex;
-        width: 50%; height: 100%;
-        color: white;
-        align-items: center;
+        align-items: center; text-align: center;
+        box-shadow: 0px 0px 10px 0.5px var(--box-shadow);
     }
 
-    .header .redirect-list .redirect-obj {
-        width: fit-content; height: fit-content;
-        margin-right: 20%;
+    .header .HomeButton {
+        width: 35px; height: 35px;
+        margin-right: 10px;
     }
 
-    .header .redirect-list .redirect-obj a {
-        text-decoration: none; list-style: none; color: var(--background-color);
+    .header .Search {
+        width: 35px; height: 35px;
+        background-color: var(--header-second-color); border-radius: 100vh;
+        align-items: center; text-align: center; justify-content: center;
     }
-
-    .header .search {
-        width: 100%; height: 100%;
-    }
-
-    .header .search .search-button .icon {
-        background-color: gray; border-radius: 100%;
-        width: 10%; height: 130%; color: var(--background-color);
-    }
-
-    io-icon {
+    .header .Search .SearchIcon {
+        width: 20px; height: 20px;
+        color: var(--hover-icons-color);
+        padding: 7.5px;
     }
 }

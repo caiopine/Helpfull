@@ -1,6 +1,8 @@
 /* ESPAÇO PARA VARIÁVEIS */
 :root {
     --background-color: rgb(245, 245, 245);
+    --header-color: white;
+    --header-second-color: rgb(230, 230, 230);
     --box-shadow: rgb(200, 200, 200);
     --primary-color: #D88B1B;
     --primary-text-color: black;
