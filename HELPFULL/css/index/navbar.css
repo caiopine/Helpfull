@@ -55,7 +55,7 @@
 
     .header .Feeds {
         width: 250px; align-self: center;
-        padding-top: 5px; padding-bottom: 5px; margin-left: 30%; margin-right: 15%;
+        padding-top: 5px; padding-bottom: 5px; margin-left: auto; margin-right: auto;
         justify-content: center; align-items: center; text-align: center;
         display: flex;
     }
@@ -102,31 +102,42 @@
     }
 
     .header .UserAndConfigContainer .User {
-        width: 100px;
+        width: fit-content;
+        min-width: 100px;
         padding: 5px;
+        margin-left: 2.5px; margin-right: 2.5px;
         display: flex;
         background-color: var(--header-second-color); border-radius: 20px;
+    }
+    .header .UserAndConfigContainer .User:hover {
+        cursor: pointer;
+        color: var(--primary-color);
     }
     
     .header .User .UserPicture {
         color: var(--primary-icons-color);
         max-width: 30px; max-height: 30px;
+        margin-right: 5px;
         background: var(--header-color); border-radius: 100%;
     }
 
     .header .User .UserName {
         margin-top: 7px; font-family: 'Roboto';
+        color: var(--primary-icons-color);
     }
 
     .header .Config {
         width: 40px; height: 40px;
         margin-left: 2.5px; margin-right: 2.5px;
-        padding-top: 3px;
+        padding: 3px;
         background-color: var(--header-second-color); border-radius: 100%;
     }
 
-    .header .Confing .ConfigIcon {
-        width: 30px;
-        color: var(--primary-icons-color);
+    .header .Config .ConfigIcon {
+        width: 30px; color: var(--primary-icons-color);
+    }
+
+    .header .Config .ConfigIcon:hover {
+        color: var(--hover-icons-color); cursor: pointer;
     }
 }
