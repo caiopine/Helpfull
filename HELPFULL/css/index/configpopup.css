@@ -1,3 +1,72 @@
 .ConfigPopup {
-    background-color: ;
+    width: 350px; height: max-content;
+    padding: 10px;
+    position: fixed; right: 20px; top: 50px;
+    background-color: white; border-radius: 5px;
+    box-shadow: 0px 3px 10px 0px var(--box-shadow);
+    display: block;
+}
+
+.ConfigPopup .Userfield {
+    width: 100%; height: max-content;
+    display: flex; align-items: center;
+    padding: 10px; gap: 10px;
+    text-decoration: none;
+    color: var(--primary-text-color); border-radius: 5px;
+}
+
+.ConfigPopup .Userfield:hover {
+    background-color: var(--header-second-color);
+}
+
+.ConfigPopup .Userfield .UserPicture {
+    width: 50px; height: 40px;
+    padding: 10px; background-color: var(--primary-icons-color); border-radius: 100%;
+}
+
+.ConfigPopup .Userfield .UserTexts {
+}
+
+.ConfigPopup .Userfield .UserTexts .UserName {
+    font-weight: bolder;
+}
+
+.ConfigPopup .Userfield .UserTexts .UserFieldDescription {
+    color: var(--primary-icons-color);
+}
+
+.ConfigPopup .HRConfigPopup {
+    opacity: 0.7;
+    margin-top: 10px; margin-bottom: 10px;
+}
+
+/* */
+
+.ConfigPopup .Feedbackfield {
+    width: 100%; height: max-content;
+    display: flex; align-items: center;
+    padding: 10px; gap: 10px;
+    text-decoration: none;
+    color: var(--primary-text-color); border-radius: 5px;
+}
+
+.ConfigPopup .Feedbackfield:hover {
+    background-color: var(--header-second-color);
+}
+
+.ConfigPopup .Feedbackfield .FeedbackPicture {
+    width: 22px; height: 20px;
+    padding: 10px; background-color: var(--box-shadow); border-radius: 100%;
+}
+
+.ConfigPopup .Feedbackfield .FeedbackTexts {
+    font-size: 14px;
+}
+
+.ConfigPopup .Feedbackfield .FeedbackTexts .FeedbackName {
+    font-weight: bolder;
+}
+
+.ConfigPopup .Feedbackfield .FeedbackTexts .FeedbackFieldDescription {
+    color: var(--primary-icons-color);
 }
