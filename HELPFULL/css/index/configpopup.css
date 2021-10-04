@@ -70,3 +70,26 @@
 .ConfigPopup .Feedbackfield .FeedbackTexts .FeedbackFieldDescription {
     color: var(--primary-icons-color);
 }
+
+/* */
+
+.ConfigPopup .ColorSchemeAndTranslate {
+    width: 100%; height: max-content;
+    display: flex; align-items: center;
+    padding: 10px; gap: 10px;
+    text-decoration: none;
+    color: var(--primary-text-color); border-radius: 5px;
+}
+
+.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton {
+    width: 50%; height: max-content;
+}
+
+.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModePicture {
+    width: 22px; height: 20px;
+    padding: 10px; background-color: var(--box-shadow); border-radius: 100%;
+}
+
+.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModeTexts {
+    font-size: 14px;
+}
