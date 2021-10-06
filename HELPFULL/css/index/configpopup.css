@@ -76,20 +76,58 @@
 .ConfigPopup .ColorSchemeAndTranslate {
     width: 100%; height: max-content;
     display: flex; align-items: center;
-    padding: 10px; gap: 10px;
     text-decoration: none;
     color: var(--primary-text-color); border-radius: 5px;
 }
 
 .ConfigPopup .ColorSchemeAndTranslate .ColorModeButton {
     width: 50%; height: max-content;
+    display: flex; align-items: center;
+    padding: 10px; gap: 10px;
+    text-decoration: none;
+    color: var(--primary-text-color); border-radius: 5px;
+    cursor: pointer;
+}
+
+.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton:hover {
+    background-color: var(--header-second-color);
 }
 
 .ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModePicture {
-    width: 22px; height: 20px;
+    width: 30px; height: 20px;
     padding: 10px; background-color: var(--box-shadow); border-radius: 100%;
 }
 
 .ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModeTexts {
-    font-size: 14px;
+    font-size: 14px; height: 100%;
+    text-align: center;
+}
+
+.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModeTexts .ColorModeSwitch {
+    width: 50px; height: 25px;
+    position: relative;
+    -webkit-appearance: none; outline: none;
+    background: rgb(200, 200, 200); border-radius: 10px;
+    transition: .5s;
+}
+
+.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModeTexts .ColorModeSwitch:checked {
+
+}
+
+.ConfigPopup .ColorSchemeAndTranslate .TranslateButton {
+    width: 50%; height: max-content;
+    display: flex; align-items: center;
+    padding: 10px; gap: 10px;
+    text-decoration: none;
+    color: var(--primary-text-color); border-radius: 5px;
+}
+
+.ConfigPopup .ColorSchemeAndTranslate .TranslateButton:hover {
+    background-color: var(--header-second-color);
+}
+
+.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .TranslatePicture {
+    width: 22px; height: 20px;
+    padding: 10px; background-color: var(--box-shadow); border-radius: 100%;
 }
