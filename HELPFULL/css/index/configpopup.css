@@ -100,19 +100,13 @@
 
 .ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModeTexts {
     font-size: 14px; height: 100%;
-    text-align: center;
+    display: flex; align-items: center; justify-content: center;
 }
 
-.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModeTexts .ColorModeSwitch {
-    width: 50px; height: 25px;
-    position: relative;
-    -webkit-appearance: none; outline: none;
-    background: rgb(200, 200, 200); border-radius: 10px;
-    transition: .5s;
-}
-
-.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModeTexts .ColorModeSwitch:checked {
-
+.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModeTexts .ColorModeName {
+    font-weight: bolder; font-size: 16px;
+    color: var(--primary-text-color);
+    width: max-content;
 }
 
 .ConfigPopup .ColorSchemeAndTranslate .TranslateButton {
