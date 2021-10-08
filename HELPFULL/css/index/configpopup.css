@@ -2,9 +2,9 @@
     width: 350px; height: max-content;
     padding: 10px;
     position: fixed; right: 20px; top: 50px;
-    background-color: white; border-radius: 5px;
-    box-shadow: 0px 3px 10px 0px var(--box-shadow);
-    display: block;
+    background-color: var(--header-color); border-radius: 5px;
+    box-shadow: 0px 3px 10px 0px var(--shadow-color);
+    display: block; visibility: hidden;
 }
 
 .ConfigPopup .Userfield {
@@ -21,10 +21,8 @@
 
 .ConfigPopup .Userfield .UserPicture {
     width: 50px; height: 40px;
-    padding: 10px; background-color: var(--primary-icons-color); border-radius: 100%;
-}
-
-.ConfigPopup .Userfield .UserTexts {
+    color: var(--primary-icons-color);
+    padding: 10px; background-color: var(--header-second-color); border-radius: 100%;
 }
 
 .ConfigPopup .Userfield .UserTexts .UserName {
@@ -32,7 +30,7 @@
 }
 
 .ConfigPopup .Userfield .UserTexts .UserFieldDescription {
-    color: var(--primary-icons-color);
+    color: var(--secundary-text-color);
 }
 
 .ConfigPopup .HRConfigPopup {
@@ -56,7 +54,7 @@
 
 .ConfigPopup .Feedbackfield .FeedbackPicture {
     width: 22px; height: 20px;
-    padding: 10px; background-color: var(--box-shadow); border-radius: 100%;
+    padding: 10px; background-color: var(--shadow-color); border-radius: 100%;
 }
 
 .ConfigPopup .Feedbackfield .FeedbackTexts {
@@ -95,7 +93,8 @@
 
 .ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModePicture {
     width: 30px; height: 20px;
-    padding: 10px; background-color: var(--box-shadow); border-radius: 100%;
+    max-width: 30px; max-height: 20px;
+    padding: 10px; background-color: var(--shadow-color); border-radius: 100%;
 }
 
 .ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .ColorModeTexts {
@@ -109,19 +108,6 @@
     width: max-content;
 }
 
-.ConfigPopup .ColorSchemeAndTranslate .TranslateButton {
-    width: 50%; height: max-content;
-    display: flex; align-items: center;
-    padding: 10px; gap: 10px;
-    text-decoration: none;
-    color: var(--primary-text-color); border-radius: 5px;
-}
-
-.ConfigPopup .ColorSchemeAndTranslate .TranslateButton:hover {
-    background-color: var(--header-second-color);
-}
-
-.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .TranslatePicture {
-    width: 22px; height: 20px;
-    padding: 10px; background-color: var(--box-shadow); border-radius: 100%;
+.ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .Margin {
+    right: 100px;
 }

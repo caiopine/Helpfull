@@ -15,14 +15,16 @@ function ColorScheme(){
 
         /* TROCA DAS CORES */
         Body.style.setProperty('--background-color', '#333333');
-        Body.style.setProperty('--box-shadow', 'black');
+        Body.style.setProperty('--shadow-color', 'rgb(25, 25, 25)');
         Body.style.setProperty('--primary-text-color', 'white');
+        Body.style.setProperty('--secundary-text-color', 'gray')
         Body.style.setProperty('--primary-icons-color', 'white');
         Body.style.setProperty('--hover-icons-color', 'gray');
         Body.style.setProperty('--hover-language-color', '#505050');
         Body.style.setProperty('--placeholder-color', '#dddddd');
-        /* INVERTE A COR DO LOGO */
-        Logo.src="../files/logo/WhiteLogo.png";
+        Body.style.setProperty('--header-color', '#2c2c2c');
+        Body.style.setProperty('--header-second-color', '#3c3c3c'); 
+        
         /* COLOCA UMA TRANSIÇÃO */
         Body.style.setProperty('transition', '0.5s');
         Body.style.setProperty('delay', '2s');
@@ -34,14 +36,15 @@ function ColorScheme(){
 
         /* TROCA DAS CORES */
         Body.style.setProperty('--background-color', 'rgb(245, 245, 245)');
-        Body.style.setProperty('--box-shadow', 'rgb(200, 200, 200)');
+        Body.style.setProperty('--shadow-color', 'rgb(200, 200, 200)');
         Body.style.setProperty('--primary-text-color', 'black');
         Body.style.setProperty('--primary-icons-color', 'gray');
         Body.style.setProperty('--hover-icons-color', '#333333');
         Body.style.setProperty('--hover-language-color', 'rgb(210, 210, 210)');
         Body.style.setProperty('--placeholder-color', 'gray');
-        /* INVERTE A COR DO LOGO */
-        Logo.src="../files/logo/BlackLogo.png";
+        Body.style.setProperty('--header-color', 'white')
+        Body.style.setProperty('--header-second-color', 'rgb(230, 230, 230)'); 
+
         /* COLOCA UMA TRANSIÇÃO */
         Body.style.setProperty('transition', '0.5s');
         Body.style.setProperty('delay', '2s');

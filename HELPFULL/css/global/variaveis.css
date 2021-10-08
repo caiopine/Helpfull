@@ -1,16 +1,13 @@
 /* ESPAÇO PARA VARIÁVEIS */
 :root {
-    --box-shadow: rgb(200, 200, 200);
+    /* CORES */
     --primary-color: #D88B1B;
-    --primary-icons-color: gray;
-    --hover-icons-color: #333333;
-    --hover-language-color: rgb(210, 210, 210);
-    --placeholder-color: gray;
 
     /* TEXTOS */
 
     --primary-text-color: black;
     --secundary-text-color: gray;
+    --placeholder-color: gray;
 
     /* CORPO DA PÁGINA */
 
@@ -21,4 +18,7 @@
 
     --header-color: white;
     --header-second-color: rgb(230, 230, 230);
+    --header-shadow-color: ;
+    --primary-icons-color: gray;
+    --hover-icons-color: #333333;
 }

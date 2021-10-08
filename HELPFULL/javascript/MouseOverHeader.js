@@ -48,3 +48,23 @@ function ShowConfigDescription(){
 function HideConfigDescription(){
     ConfigDescription.style.visibility = "hidden"
 }
+
+/* CONFIG POPUP */
+const ConfigPopup = document.getElementById("ConfigPopup");
+
+ConfigButton.onclick = ShowConfigPopUp;
+var PopupActive;
+
+function ShowConfigPopUp(){
+    if (PopupActive == 1) {
+        PopupActive = 0;
+
+        ConfigPopup.style.visibility = "hidden"
+    }
+
+    else {
+        PopupActive = 1;
+
+        ConfigPopup.style.visibility = "visible"
+    }
+}

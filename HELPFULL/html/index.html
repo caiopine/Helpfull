@@ -42,13 +42,13 @@
             </div>
             <!-- BOTÕES DE FEEDS -->
             <div class="Feeds">
+                <a class="Favorites" href="favorites.html" id="FavoritesButton">
+                    <ion-icon class="FavoritesIcon" name="home-outline"></ion-icon>
+                    <div class="FeedDescription" id="FavoritesDescription"><p>Início</p></div>
+                </a>
                 <a class="Timeline" href="index.html" id="TimelineButton">
                     <ion-icon class="TimelineIcon" name="time-outline"></ion-icon>
                     <div class="FeedDescription" id="TimelineDescription"><p>Linha do Tempo</p></div>
-                </a>
-                <a class="Favorites" href="favorites.html" id="FavoritesButton">
-                    <ion-icon class="FavoritesIcon" name="star-outline"></ion-icon>
-                    <div class="FeedDescription" id="FavoritesDescription"><p>Favoritos</p></div>
                 </a>
             </div>
             <!-- PERFIL E CONFIGURAÇÕES -->
@@ -66,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="ConfigPopup">
+        <div class="ConfigPopup" id="ConfigPopup">
             <!-- CAMPO DO USUÁRIO -->
             <a class="UserField" href="login.html">
                 <ion-icon class="UserPicture" name="person-outline"></ion-icon>
@@ -92,10 +92,10 @@
                         <p class="ColorModeName">Tema Escuro</p>
                     </div>
                 </a>
-                <a id="TranslateButton" class="TranslateButton">
-                    <ion-icon class="TranslatePicture" name="contrast-sharp"></ion-icon>
-                    <div class="TranslateTexts">
-                        <p class="TranslateName">Traduzir</p>
+                <a id="TranslateButton" class="ColorModeButton">
+                    <ion-icon class="ColorModePicture" name="globe-sharp"></ion-icon>
+                    <div class="ColorModeTexts Margin">
+                        <p class="ColorModeName">Traduzir</p>
                     </div>
                 </a>
             </div>
