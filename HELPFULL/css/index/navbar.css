@@ -114,10 +114,6 @@
         color: var(--primary-icons-color);
     }
 
-    .header .Feeds .Favorites .FeedDescription{
-
-    }
-
     .header .UserAndConfigContainer {
         width: fit-content;
         padding-top: 5px; padding-bottom: 5px;
