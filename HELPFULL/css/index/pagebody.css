@@ -1,0 +1,9 @@
+.PageBody{
+    width: 100%; height: 100%;
+    padding: 30px; padding-left: 40px;
+}
+
+.PageBody .PopularProjects {
+    background-color: var(--header-color);
+    width: 100%; height: 100px;
+}
