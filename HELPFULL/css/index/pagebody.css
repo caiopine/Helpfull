@@ -1,9 +1,22 @@
-.PageBody{
+.PageBody {
     width: 100%; height: 100%;
     padding: 30px; padding-left: 40px;
 }
 
 .PageBody .PopularProjects {
-    background-color: var(--header-color);
-    width: 100%; height: 100px;
+    background-color: var(--header-color); border-radius: 10px;
+    width: 100%; height: max-content;
+    padding: 30px; padding-left: 40px;
+}
+
+.PageBody .PopularProjects .PopularProjectsCarousel {
+    width: 100%; height: 300px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.PageBody .PopularProjects .PopularProjectsCarousel .CarouselElement {
+    background-color: var(--header-second-color); border-radius: 5px;
+    width: 260px;
 }
