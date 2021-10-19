@@ -50,6 +50,7 @@
 .PageBody .PopularProjects .PopularProjectsCarousel .CarouselElement .CarouselElementContainer .ArrowGradient {
     width: 100%; height: 50px;
     background-image: linear-gradient(0deg, red, transparent);
+    
 
 }
 
