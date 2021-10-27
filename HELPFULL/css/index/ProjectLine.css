@@ -1,9 +1,71 @@
 .ProjectLine {
-    width: 100%; height: max-content;
+    width: 75%; height: max-content;
     padding-left: 100px; padding-right: 100px;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto; margin-right: auto;
+}
+
+.ProjectLine .Logo {
+    width: 530px; height: 90px;
+}
+
+.ProjectLine .Title {
+    width: 440px;
+    margin-left: 20px; margin-top: 10px;
+    font-weight: bold; color: var(--primary-text-color);
+    font-size: 28px;
 }
 
 .ProjectLine .RoundedBackground {
     background-color: #B50000; border-radius: 20px;
     width: 100%; height: 200px;
+    display: flex;
+    margin-top: 20px;
+    padding: 30px;
+    align-items: center;
+}
+
+.ProjectLine .RoundedBackground .LeftContainer {
+    display: block;
+    width: 400px; height: fit-content;
+}
+
+.ProjectLine .RoundedBackground .Image {
+    width: 419px; height: 418px;
+    transform: translate(200px, -109px);
+}
+
+.ProjectLine .RoundedBackground .SecondaryText {
+    color: white; font-weight: bold;
+    font-size: 20px; margin-bottom: 10px;
+}
+
+.ProjectLine .RoundedBackground .LeftContainer .Button {
+    width: 125px; height: 40px;
+    padding-left: 3px; padding-right: 3px; padding-top: 5px; padding-bottom: 5px;
+    color: var(--primary-text-color); background-color: var(--background-color); border: none; border-radius: 10px;
+    font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 15px;
+    cursor: pointer;
+}
+
+.ProjectLineHamburgada {
+    width: 75%; height: max-content;
+    padding-left: 100px; padding-right: 100px;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto; margin-right: auto;
+}
+
+.ProjectLineHamburgada .Logo {
+    width: 250px; height: 250px;
+}
+
+.ProjectLineHamburgada .RoundedBackground {
+    background-color: #4F8DB6; border-radius: 20px;
+    width: 100%; height: 200px;
+    display: flex;
+    margin-top: 20px;
+    padding: 30px;
+    align-items: center;
 }
