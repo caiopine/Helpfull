@@ -52,13 +52,13 @@
 .ProjectLineHamburgada {
     width: 75%; height: max-content;
     padding-left: 100px; padding-right: 100px;
-    margin-top: 15px;
+    margin-top: 250px;
     display: block;
     margin-left: auto; margin-right: auto;
 }
 
 .ProjectLineHamburgada .Logo {
-    width: 250px; height: 250px;
+    width: 150px; height: 150px;
 }
 
 .ProjectLineHamburgada .RoundedBackground {
@@ -68,4 +68,15 @@
     margin-top: 20px;
     padding: 30px;
     align-items: center;
+}
+
+.ProjectLineHamburgada .Image {
+    width: 330; height: 408;
+    transform: translate(-40px, -104px);
+}
+
+.ProjectLineHamburgada .RightContainer{
+    display: flex;
+    width: 70%;
+    margin-left: 250px;
 }
