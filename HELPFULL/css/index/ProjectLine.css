@@ -52,7 +52,7 @@
 .ProjectLineHamburgada {
     width: 75%; height: max-content;
     padding-left: 100px; padding-right: 100px;
-    margin-top: 250px;
+    margin-top: 150px;
     display: block;
     margin-left: auto; margin-right: auto;
 }
@@ -79,4 +79,6 @@
     display: flex;
     width: 70%;
     margin-left: 250px;
+    gap: 20px;
+    align-items: center; justify-content: center;
 }
