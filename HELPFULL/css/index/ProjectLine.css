@@ -59,14 +59,14 @@
 .ProjectLineHamburgada {
     width: 75%; height: max-content;
     padding-left: 100px; padding-right: 100px;
-    margin-top: 150px;
+    margin-top: 100px;
     display: block;
     margin-left: auto; margin-right: auto;
 }
 
 .ProjectLineHamburgada .Logo {
     width: 150px; height: 150px;
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .ProjectLineHamburgada .RoundedBackground {
@@ -86,8 +86,12 @@
 .ProjectLineHamburgada .RightContainer{
     display: flex;
     width: 600px;
-    margin-left: 400px;
+    margin-left: 450px;
     align-items: center; justify-content: center;
+}
+
+.ProjectLineHamburgada .RightContainer .Title {
+    color: var(--primary-text-color)
 }
 
 .ProjectLineHamburgada .LeftContainer {

@@ -1,0 +1,118 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+    <!-- PREPARATIVOS, ADIÇÃO DE EXTENSÕES, ADIÇÃO DE BIBLIOTECAS E ETC; -->
+    <head>
+        <!-- SUPORTE PARA OS CARACTÉRES DA LÍNGUA PORTUGUESA; -->
+        <meta charset="UTF-8">
+        <!-- ÍCONE DO SITE -->
+        <link rel="shortcut icon" href="../files/Icons/favicon.ico">
+        <!-- SUPORTE PARA O GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <!-- FAMÍLIA ROBOTO -->
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <!-- SUPORTE PARA IOICON -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- LINK PARA A PERSONALIZAÇÃO DA PÁGINA POR CSS; -->
+        <!-- VARIÁVEIS DO CSS E GLOBAL -->
+        <link rel="stylesheet" href="../../../../css/global/global.css">
+        <link rel="stylesheet" href="../../../../css/global/variaveis.css">
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <link rel="stylesheet" href="../../../../css/index/navbar.css">
+        <!-- POP-UP DAS CONFIGURAÇÕES -->
+        <link rel="stylesheet" href="../../../../css/index/configpopup.css">
+        <!-- FERRAMENTAS -->
+        <link rel="stylesheet" href="../../../../css/login/tools.css">
+        <!-- TÍTULO DA PÁGINA -->
+        <title>Helpfull</title>
+    </head>
+    <!-- CORPO DA PÁGINA; -->
+    <body>
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <div class="header">
+            <!-- BOTÃO HOME / LOGO -->
+            <a class="HomeButton" href="index.html"><img src="../../../../files/Icons/favicon.ico"></a>
+            <!-- BOTÃO DE PESQUISA -->
+            <div class="Search">
+                <div class="SearchBackground" id="SearchBackground">
+                    <input id="SearchInput" class="SearchInput" placeholder="Pesquisar na Helpfull">
+                    <div class="SearchButton" id="SearchButton">
+                        <ion-icon class="SearchIcon" name="search-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTÕES DE FEEDS -->
+            <div class="Feeds">
+                <a class="Favorites" href="index.html" id="FavoritesButton">
+                    <ion-icon class="FavoritesIcon" name="home-outline"></ion-icon>
+                    <div class="FeedDescription" id="FavoritesDescription"><p>Início</p></div>
+                </a>
+                <a class="Timeline" href="index.html" id="TimelineButton">
+                    <ion-icon class="TimelineIcon" name="time-outline"></ion-icon>
+                    <div class="FeedDescription" id="TimelineDescription"><p>Linha do Tempo</p></div>
+                </a>
+            </div>
+            <!-- PERFIL E CONFIGURAÇÕES -->
+            <div class="UserAndConfigContainer">
+                <a href="login.html" class="a" id="UserButton">
+                    <div class="User">
+                        <ion-icon class="UserPicture" name="person-outline"></ion-icon>
+                        <p class="UserName">Usuário</p>
+                    </div>
+                    <div class="FeedDescription UserDescription" id="UserDescription"><p>Login</p></div>
+                </a>
+                <div class="Config" id="ConfigButton">
+                    <ion-icon class="ConfigIcon" name="settings-outline"></ion-icon>
+                    <div class="FeedDescription" id="ConfigDescription"><p>Configurações</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="ConfigPopup" id="ConfigPopup">
+            <!-- CAMPO DO USUÁRIO -->
+            <a class="UserField" href="login.html">
+                <ion-icon class="UserPicture" name="person-outline"></ion-icon>
+                <div class="UserTexts">
+                    <p class="UserName">Usuário</p>
+                    <p class="UserFieldDescription">Veja seu perfil</p>
+                </div>
+            </a>
+            <!-- LINHA HORIZONTAL -->
+            <hr class="HRConfigPopup">
+            <!-- CAMPO DE FEEDBACK -->
+            <a class="FeedbackField" href="feedback.html">
+                <ion-icon class="FeedbackPicture" name="bug-outline"></ion-icon>
+                <div class="FeedbackTexts">
+                    <p class="FeedbackName">Dar feedback</p>
+                    <p class="FeedbackFieldDescription">Para opiniões e erros.</p>
+                </div>
+            </a>
+            <div class="ColorSchemeAndTranslate">
+                <a id="ColorModeButton" class="ColorModeButton">
+                    <ion-icon class="ColorModePicture" name="contrast-sharp"></ion-icon>
+                    <div class="ColorModeTexts">
+                        <p class="ColorModeName">Tema Escuro</p>
+                    </div>
+                </a>
+                <a id="TranslateButton" class="ColorModeButton">
+                    <ion-icon class="ColorModePicture" name="globe-sharp"></ion-icon>
+                    <div class="ColorModeTexts Margin">
+                        <p class="ColorModeName">Traduzir</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- CORPO DA PÁGINA -->
+        <div class="PageBody">
+            <div class="BigField">
+            </div>
+        </div>
+    </body>
+    <!-- LINK PARA ADIÇÃO DO JAVASCRIPT COM SUAS FUNCIONALIDADES; -->
+        <!-- DARK MODE E BRIGHT MODE -->
+        <script src="../javascript/ColorScheme.js"></script>
+        <!-- TRADUZIR A PÁGINA -->
+        <script src="../javascript/Translate.js"></script>
+        <!-- BARRA DE PESQUISA -->
+        <script src="../javascript/SlideSearchbar.js"></script>
+        <!-- MOUSEOVER, DESCRIÇÃO DOS FEEDS -->
+        <script src="../javascript/MouseOverHeader.js"></script>
+</html>
