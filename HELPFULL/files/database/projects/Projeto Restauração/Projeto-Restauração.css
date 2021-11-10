@@ -1,0 +1,108 @@
+.BodyPage {
+    width: 100%; height: max-content;
+    display: flex; justify-content: center;
+    padding-top: 50px; padding-bottom: 50px;
+}
+
+.BodyPage .InvisibleField {
+    width: max-content; height: max-content;
+    display: flex;
+}
+
+.BodyPage .InvisibleField .ProjectField {
+    background-color: var(--header-color); border-radius: 20px; box-shadow: 0px 3px 10px 0px var(--shadow-color);
+    width: 750px; height: max-content;
+    margin-right: 10px;
+    padding-top: 50px; padding-bottom: 50px;
+}
+
+.BodyPage .InvisibleField .SocialMediaField {
+    width: 60px; height: 300px;
+    background-color: var(--header-color); border-radius: 20px; box-shadow: 0px 3px 10px 0px var(--shadow-color);
+    margin-left: 10px;
+    text-align: center; justify-content: center; align-items: center;
+    display: block;
+}
+
+.BodyPage .InvisibleField .SocialMediaField .SocialMediaIcon {
+    width: 50px; height: 50px;
+    color: var(--primary-text-color);
+    margin-top: 2px; margin-bottom: 2px;
+    padding: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.BodyPage .InvisibleField .SocialMediaField .SocialMediaIcon:hover {
+    width: 50px; height: 50px;
+    background-color: var(--header-second-color); border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectTitle {
+    width: 100%; height: max-content;
+    align-items: center; text-align: center; justify-content: center;
+    margin-bottom: 25px;
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectTitle .ProjectLogo {
+    width: 300px; height: 50px;
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectImages {
+    width: 100%; height: max-content;
+    align-items: center; text-align: center; justify-content: center;
+    margin-top: 25px; margin-bottom: 25px;
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectImages .SquadedModelImages {
+    width: 200px; height: 200px;
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectText {
+    width: 80%; height: fit-content;
+    text-align: center;
+    margin-left: auto; margin-right: auto;
+    margin-top: 25px; margin-bottom: 25px;
+    color: var(--primary-text-color);
+
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectVideoContainer {
+    width: 100%; height: 300px;
+    align-items: center; text-align: center; justify-content: center;
+    display: flex;
+    background-color: black; border-radius: 10px;
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectVideoContainer .ProjectVideo {
+    width: 70%; height: 275px;
+    margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectButtons {
+    width: 100%; height: 100px;
+    align-items: center; text-align: center; justify-content: center;
+    display: flex;
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectButtons .DonateButton {
+    background-color: var(--primary-color); border-radius: 50px;
+    width: fit-content; height: fit-content;
+    color: white; font-size: 20px;
+    padding: 10px; padding-left: 20px; padding-right: 20px;
+    box-shadow: 0px 1px 5px 0px var(--primary-color);
+    margin-left: 25px; margin-right: 25px;
+    transition: 0.3s;
+}
+
+.BodyPage .InvisibleField .ProjectField .ProjectButtons .DonateButton:hover {
+    background-color: white; border-radius: 50px;
+    width: fit-content; height: fit-content;
+    color: var(--primary-color); font-size: 20px;
+    padding: 10px; padding-left: 20px; padding-right: 20px;
+    box-shadow: 0px 1px 5px 0px var(--primary-color);
+    margin-left: 25px; margin-right: 25px;]
+    transition: 0.3s;
+}
