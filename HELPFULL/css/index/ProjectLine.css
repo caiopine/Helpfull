@@ -84,7 +84,7 @@
 }
 
 .ProjectLineHamburgada .Image {
-    width: 100%; height: 400px;
+    height: 400px;
     object-fit: contain;
     transform: translate(-100px, -100px);
 }
