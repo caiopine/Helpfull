@@ -1,0 +1,147 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+    <!-- PREPARATIVOS, ADIÇÃO DE EXTENSÕES, ADIÇÃO DE BIBLIOTECAS E ETC; -->
+    <head>
+        <!-- SUPORTE PARA OS CARACTÉRES DA LÍNGUA PORTUGUESA; -->
+        <meta charset="UTF-8">
+        <!-- ÍCONE DO SITE -->
+        <link rel="shortcut icon" href="../../../../files/Icons/favicon.ico">
+        <!-- SUPORTE PARA O GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <!-- FAMÍLIA ROBOTO -->
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <!-- SUPORTE PARA IOICON -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- LINK PARA A PERSONALIZAÇÃO DA PÁGINA POR CSS; -->
+        <!-- VARIÁVEIS DO CSS E GLOBAL -->
+        <link rel="stylesheet" href="../../../../css/global/global.css">
+        <link rel="stylesheet" href="../../../../css/global/variaveis.css">
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <link rel="stylesheet" href="../../../../css/index/navbar.css">
+        <!-- POP-UP DAS CONFIGURAÇÕES -->
+        <link rel="stylesheet" href="../../../../css/index/configpopup.css">
+        <!-- FERRAMENTAS -->
+        <link rel="stylesheet" href="../../../../css/login/tools.css">
+        <!-- SPINVISÍVEL CSS -->
+        <link rel="stylesheet" href="SPInvisivel.css">
+        <!-- TÍTULO DA PÁGINA -->
+        <title>Helpfull</title>
+    </head>
+    <!-- CORPO DA PÁGINA; -->
+    <body>
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <div class="header">
+            <!-- BOTÃO HOME / LOGO -->
+            <a class="HomeButton" href="../../../../html/index.html"><img src="../../../../files/Icons/favicon.ico"></a>
+            <!-- BOTÃO DE PESQUISA -->
+            <div class="Search">
+                <div class="SearchBackground" id="SearchBackground">
+                    <input id="SearchInput" class="SearchInput" placeholder="Pesquisar na Helpfull">
+                    <div class="SearchButton" id="SearchButton">
+                        <ion-icon class="SearchIcon" name="search-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTÕES DE FEEDS -->
+            <div class="Feeds">
+                <a class="Favorites" href="../../../../html/index.html" id="FavoritesButton">
+                    <ion-icon class="FavoritesIcon" name="home-outline"></ion-icon>
+                    <div class="FeedDescription" id="FavoritesDescription"><p>Início</p></div>
+                </a>
+                <a class="Timeline" href="index.html" id="TimelineButton">
+                    <ion-icon class="TimelineIcon" name="time-outline"></ion-icon>
+                    <div class="FeedDescription" id="TimelineDescription"><p>Linha do Tempo</p></div>
+                </a>
+            </div>
+            <!-- PERFIL E CONFIGURAÇÕES -->
+            <div class="UserAndConfigContainer">
+                <a href="../../../../html/login.html" class="a" id="UserButton">
+                    <div class="User">
+                        <ion-icon class="UserPicture" name="person-outline"></ion-icon>
+                        <p class="UserName">Usuário</p>
+                    </div>
+                    <div class="FeedDescription UserDescription" id="UserDescription"><p>Login</p></div>
+                </a>
+                <div class="Config" id="ConfigButton">
+                    <ion-icon class="ConfigIcon" name="settings-outline"></ion-icon>
+                    <div class="FeedDescription" id="ConfigDescription"><p>Configurações</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="ConfigPopup" id="ConfigPopup">
+            <!-- CAMPO DO USUÁRIO -->
+            <a class="UserField" href="../../../../html/login.html">
+                <ion-icon class="UserPicture" name="person-outline"></ion-icon>
+                <div class="UserTexts">
+                    <p class="UserName">Usuário</p>
+                    <p class="UserFieldDescription">Veja seu perfil</p>
+                </div>
+            </a>
+            <!-- LINHA HORIZONTAL -->
+            <hr class="HRConfigPopup">
+            <!-- CAMPO DE FEEDBACK -->
+            <a class="FeedbackField" href="feedback.html">
+                <ion-icon class="FeedbackPicture" name="bug-outline"></ion-icon>
+                <div class="FeedbackTexts">
+                    <p class="FeedbackName">Dar feedback</p>
+                    <p class="FeedbackFieldDescription">Para opiniões e erros.</p>
+                </div>
+            </a>
+            <div class="ColorSchemeAndTranslate">
+                <a id="ColorModeButton" class="ColorModeButton">
+                    <ion-icon class="ColorModePicture" name="contrast-sharp"></ion-icon>
+                    <div class="ColorModeTexts">
+                        <p class="ColorModeName">Tema Escuro</p>
+                    </div>
+                </a>
+                <a id="TranslateButton" class="ColorModeButton">
+                    <ion-icon class="ColorModePicture" name="globe-sharp"></ion-icon>
+                    <div class="ColorModeTexts Margin">
+                        <p class="ColorModeName">Traduzir</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- CORPO DA PÁGINA -->
+        <div class="BodyPage">
+            <div class="InvisibleField">
+                <div class="ProjectField">
+                    <div class="ProjectTitle">
+                        <a href="https://www.spinvisivel.org/"><img class="ProjectLogo" src="logo2.png"></a>
+                    </div>
+                    <div class="ProjectImages">
+                        <img class="SquadedModelImages" src="modelo1.png">
+                        <img class="SquadedModelImages" src="modelo2.png">
+                        <img class="SquadedModelImages" src="modelo3.png">
+                    </div>
+                    <h2 class="ProjectText">Olhamos para os marginalizados da sociedade e humanizamo-os através de histórias.<br>
+                    Buscamos conectar a sociedade e a população de rua através de nossas redes sociais.</h2>
+                    <div class="ProjectVideoContainer"><div class="ProjectVideo">
+                        <iframe autoplay width="1175" height="661" src="https://www.youtube.com/embed/8LsdO4gL0W0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div></div>
+                    <div class="ProjectButtons">
+                        <a class="DonateButton" href="https://paybox.doare.org/br/paybox?sourceURL=https:%2F%2Fwww.spinvisivel.org%2Finverno&utm_source=lp1&lang=br&amount=45&values=45,90,180&currency=BRL&showIncludeCosts=1&orgId=e3c39cc1-e3a9-11ea-9f39-06c21fae3484&campaignId=219915d7-a209-11eb-b3b5-0605af2f3d01&subscribe=&subscriptionAmount=25&showSubscription=1&referer=https:%2F%2Fwww.spinvisivel.org%2Finverno&source=lp1">doar agora!</a>
+                        <a class="DonateButton" href="https://www.spinvisivel.org/voluntario">voluntariar-se</a>
+                    </div>
+                </div>
+                <!-- REDES SOCIAIS DO PROJETO -->
+                <div class="SocialMediaField">
+                    <a href="https://www.instagram.com/spinvisivel/"><ion-icon class="SocialMediaIcon" name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/spinvisivel/"><ion-icon class="SocialMediaIcon" name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.youtube.com/user/saopauloinvisivel"><ion-icon class="SocialMediaIcon" name="logo-youtube"></ion-icon></a>
+                    <a href="https://www.tiktok.com/@spinvisivel?"><ion-icon class="SocialMediaIcon" name="logo-tiktok"></ion-icon></a>
+                    <a href="mailto:oi@spinvisivel.org"><ion-icon class="SocialMediaIcon" name="mail-outline"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- LINK PARA ADIÇÃO DO JAVASCRIPT COM SUAS FUNCIONALIDADES; -->
+        <!-- DARK MODE E BRIGHT MODE -->
+        <script src="../../../../javascript/ColorScheme.js"></script>
+        <!-- TRADUZIR A PÁGINA -->
+        <script src="../../../../javascript/Translate.js"></script>
+        <!-- BARRA DE PESQUISA -->
+        <script src="../../../../javascript/SlideSearchbar.js"></script>
+        <!-- MOUSEOVER, DESCRIÇÃO DOS FEEDS -->
+        <script src="../../../../javascript/MouseOverHeader.js"></script>
+</html>
