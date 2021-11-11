@@ -86,7 +86,7 @@
 .ProjectLineHamburgada .Image {
     height: 400px;
     object-fit: contain;
-    transform: translate(-100px, -100px);
+    transform: translate(-150px, -100px);
 }
 
 .ProjectLineHamburgada .RightContainer{
@@ -103,7 +103,7 @@
 .ProjectLineHamburgada .LeftContainer {
     display: block;
     width: 400px; height: fit-content;
-    margin-left: 320px;
+    margin-left: 20%;
 }
 
 .ProjectLineHamburgada .LeftContainer .SecondaryText {
