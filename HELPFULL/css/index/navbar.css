@@ -1,6 +1,172 @@
 /* ESTILO QUE SERÁ APLICADO EM TABLETS */
 @media screen and (max-width: 1024px) {
+    .body {
+        background-color: var(--background-color);
+    }
+
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a { text-decoration: none;}
+
+    .header {
+        background-color: var(--header-color);
+        width: 100%; height: 50px;
+        padding: 0px 30px 0px 30px;
+        display: flex;
+        align-items: center; text-align: center;
+        box-shadow: 0px 0px 10px 0.5px var(--shadow-color);
+        justify-content: center; align-items: center; text-align: center;
+    }
+
+    .header .HomeButton {
+        width: 35px; height: 35px;
+        margin-right: 10px;
+    }
+
+    .header .Search {
+        width: 35px;
+    }
+
+    .header .Search .SearchBackground {
+        width: 35px; height: 35px;
+        margin-top: 7.5px;
+        background-color: var(--header-second-color); border-radius: 100vh;
+        justify-content: center; align-items: center; text-align: center;
+        transition: 0.3s;
+        display: flex;
+    }
+
+    .header .Search .SearchButton {
+        cursor: pointer; padding: 7.5px; 
+    }
+
+    .header .Search .SearchIcon {
+        width: 20px; height: 20px;
+        color: var(--primary-icons-color);
+    }
+    .header .Search .SearchInput {
+        width: 125px; height: 75%;
+        margin-left: 15px; margin-top: 1px;
+        background: none; outline: none; border: none;
+        display: none; transition: .3s;
+    }
+
+    .header .Feeds {
+        width: 250px;
+        padding-top: 5px; padding-bottom: 5px; margin-left: auto; margin-right: auto;
+        justify-content: center; align-items: center; text-align: center;
+        display: flex;
+    }
+
+    .header .Feeds .Timeline {
+        width: 75px;
+        margin-left: 2.5px; margin-right: 2.5px;
+        padding-top: 3px;
+        text-decoration: none;
+    }
+
+    .header .Feeds .Timeline:hover {
+        background-color: var(--header-second-color); border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .header .Feeds .Timeline .TimelineIcon {
+        width: 32px; height: 32px;
+        color: var(--primary-icons-color);
+    }
+
+    .header .Feeds .Timeline .FeedDescription {
+        margin-left: 0px;
+    }
+
+    .header .FeedDescription {
+        width: max-content; height: max-content;
+        text-align: center; justify-content: center; align-items: center;
+        margin-top: 15px; padding: 7px 10px 7px 10px;
+        background-color: black; opacity: 0.75; border-radius: 10px;
+        color: white;
+        font-size: 14px; visibility: hidden;
+    }
+
+    .header .Feeds .Favorites {
+        width: 75px;
+        margin-left: 2.5px; margin-right: 2.5px;
+        padding-top: 3px;
+        border-radius: 5px;
+        text-decoration: none;
+        border-bottom: 2px solid var(--primary-color); border-radius: 5px;
+    }
+
+    .header .Feeds .Favorites:hover {
+        background-color: var(--header-second-color); border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .header .Feeds .Favorites .FavoritesIcon {
+        width: 32px; height: 32px;
+        color: var(--primary-icons-color);
+    }
+
+    .header .UserAndConfigContainer {
+        width: fit-content;
+        padding-top: 5px; padding-bottom: 5px;
+        justify-content: center; align-items: center; text-align: center;
+        display: flex;
+    }
+
+    .header .UserAndConfigContainer .User {
+        width: max-content;
+        min-width: 100px;
+        padding: 5px; padding-right: 10px;
+        margin-left: 2.5px; margin-right: 2.5px;
+        display: flex;
+        background-color: var(--header-second-color); border-radius: 20px;
+    }
     
+    .header .UserAndConfigContainer .User:hover {
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+    
+    .header .User .UserPicture {
+        color: var(--primary-icons-color);
+        max-width: 30px; max-height: 30px;
+        width: 80px; height: 30px;
+        margin-left: 1px;
+        background: var(--header-color); border-radius: 100%;
+    }
+
+    .header .User .UserName {
+        margin-left: 10px;
+        margin-top: 7px; font-family: 'Roboto';
+        color: var(--primary-icons-color);
+    }
+
+    .header .UserDescription {
+        margin-top: 10px; margin-left: 30px;
+    }
+
+    .header .Config {
+        width: 40px; height: 40px;
+        margin-left: 2.5px; margin-right: 2.5px;
+        padding: 3px;
+        background-color: var(--header-second-color); border-radius: 100%;
+        cursor: pointer;
+    }
+
+    .header .Config .ConfigIcon {
+        width: 30px; color: var(--primary-icons-color);
+    }
+
+    .header .Config .ConfigIcon:hover {
+        color: var(--hover-icons-color);
+    }
+
+    .header .Config .FeedDescription {
+        margin-left: -80px;
+    }
 }
 
 /* ESTILO QUE SERÁ APLICADO EM DESKTOPS */
