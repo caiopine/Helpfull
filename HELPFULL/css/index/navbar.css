@@ -94,8 +94,10 @@
         width: 75px;
         margin-left: 2.5px; margin-right: 2.5px;
         padding-top: 3px;
-        border-radius: 5px;
         text-decoration: none;
+    }
+
+    .header .Feeds .Active {
         border-bottom: 2px solid var(--primary-color); border-radius: 5px;
     }
 
@@ -267,6 +269,9 @@
         padding-top: 3px;
         border-radius: 5px;
         text-decoration: none;
+    }
+
+    .Active {
         border-bottom: 2px solid var(--primary-color); border-radius: 5px;
     }
 

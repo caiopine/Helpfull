@@ -14,14 +14,15 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <!-- LINK PARA A PERSONALIZAÇÃO DA PÁGINA POR CSS; -->
         <!-- VARIÁVEIS DO CSS E GLOBAL -->
-        <link rel="stylesheet" href="../../../../css/global/global.css">
-        <link rel="stylesheet" href="../../../../css/global/variaveis.css">
+        <link rel="stylesheet" href="../css/global/global.css">
+        <link rel="stylesheet" href="../css/global/variaveis.css">
         <!-- BARRA DE NAVEGAÇÃO -->
-        <link rel="stylesheet" href="../../../../css/index/navbar.css">
+        <link rel="stylesheet" href="../css/index/navbar.css">
         <!-- POP-UP DAS CONFIGURAÇÕES -->
-        <link rel="stylesheet" href="../../../../css/index/configpopup.css">
+        <link rel="stylesheet" href="../css/index/configpopup.css">
         <!-- FERRAMENTAS -->
-        <link rel="stylesheet" href="../../../../css/login/tools.css">
+        <link rel="stylesheet" href="../css/login/tools.css">
+        <link rel="stylesheet" href="../css/index/timeline.css">
         <!-- TÍTULO DA PÁGINA -->
         <title>Helpfull</title>
     </head>
@@ -31,22 +32,13 @@
         <div class="header">
             <!-- BOTÃO HOME / LOGO -->
             <a class="HomeButton" href="index.html"><img src="../../../../files/Icons/favicon.ico"></a>
-            <!-- BOTÃO DE PESQUISA -->
-            <div class="Search">
-                <div class="SearchBackground" id="SearchBackground">
-                    <input id="SearchInput" class="SearchInput" placeholder="Pesquisar na Helpfull">
-                    <div class="SearchButton" id="SearchButton">
-                        <ion-icon class="SearchIcon" name="search-outline"></ion-icon>
-                    </div>
-                </div>
-            </div>
             <!-- BOTÕES DE FEEDS -->
             <div class="Feeds">
                 <a class="Favorites" href="index.html" id="FavoritesButton">
                     <ion-icon class="FavoritesIcon" name="home-outline"></ion-icon>
                     <div class="FeedDescription" id="FavoritesDescription"><p>Início</p></div>
                 </a>
-                <a class="Timeline" href="index.html" id="TimelineButton">
+                <a class="Timeline Active" href="timeline.html" id="TimelineButton">
                     <ion-icon class="TimelineIcon" name="time-outline"></ion-icon>
                     <div class="FeedDescription" id="TimelineDescription"><p>Linha do Tempo</p></div>
                 </a>
@@ -102,7 +94,26 @@
         </div>
         <!-- CORPO DA PÁGINA -->
         <div class="PageBody">
-            <div class="BigField">
+            <div class="TimeLine">
+                <div class="Publication">
+                    <div class="TopOfPublication">
+                        <div class="Profile">
+                            <div class="ProfilePicture"></div>
+                            <div class="ProfileTexts">
+                                <p class="ProfileName">Nome do Projeto</p>
+                                <p class="PublicationTime">24h</p>
+                            </div>
+                        </div>
+                        <div class="Buttons">
+                            <a class="ShareButton"><ion-icon class="Icon" name="share-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="ContentOfPublication"></div>
+                    <div class="BottomOfPublication">
+                        <div class="LikeButton"><ion-icon class="Icon" name="thumbs-up-outline"></ion-icon><p class="LikeWord">Curtir</p></div>
+                        <div class="CommentButton"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
