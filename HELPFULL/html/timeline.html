@@ -5,7 +5,7 @@
         <!-- SUPORTE PARA OS CARACTÉRES DA LÍNGUA PORTUGUESA; -->
         <meta charset="UTF-8">
         <!-- ÍCONE DO SITE -->
-        <link rel="shortcut icon" href="../../../../files/Icons/favicon.ico">
+        <link rel="shortcut icon" href="../files/Icons/favicon.ico">
         <!-- SUPORTE PARA O GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <!-- FAMÍLIA ROBOTO -->
@@ -22,8 +22,6 @@
         <link rel="stylesheet" href="../../../../css/index/configpopup.css">
         <!-- FERRAMENTAS -->
         <link rel="stylesheet" href="../../../../css/login/tools.css">
-        <!-- SPINVISÍVEL CSS -->
-        <link rel="stylesheet" href="Locomotiva.css">
         <!-- TÍTULO DA PÁGINA -->
         <title>Helpfull</title>
     </head>
@@ -32,21 +30,30 @@
         <!-- BARRA DE NAVEGAÇÃO -->
         <div class="header">
             <!-- BOTÃO HOME / LOGO -->
-            <a class="HomeButton" href="../../../../html/index.html"><img src="../../../../files/Icons/favicon.ico"></a>
+            <a class="HomeButton" href="index.html"><img src="../../../../files/Icons/favicon.ico"></a>
+            <!-- BOTÃO DE PESQUISA -->
+            <div class="Search">
+                <div class="SearchBackground" id="SearchBackground">
+                    <input id="SearchInput" class="SearchInput" placeholder="Pesquisar na Helpfull">
+                    <div class="SearchButton" id="SearchButton">
+                        <ion-icon class="SearchIcon" name="search-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
             <!-- BOTÕES DE FEEDS -->
             <div class="Feeds">
-                <a class="Favorites" href="../../../../html/index.html" id="FavoritesButton">
+                <a class="Favorites" href="index.html" id="FavoritesButton">
                     <ion-icon class="FavoritesIcon" name="home-outline"></ion-icon>
                     <div class="FeedDescription" id="FavoritesDescription"><p>Início</p></div>
                 </a>
-                <a class="Timeline" href="../../../../html/timeline.html" id="TimelineButton">
+                <a class="Timeline" href="index.html" id="TimelineButton">
                     <ion-icon class="TimelineIcon" name="time-outline"></ion-icon>
                     <div class="FeedDescription" id="TimelineDescription"><p>Linha do Tempo</p></div>
                 </a>
             </div>
             <!-- PERFIL E CONFIGURAÇÕES -->
             <div class="UserAndConfigContainer">
-                <a href="../../../../html/login.html" class="a" id="UserButton">
+                <a href="login.html" class="a" id="UserButton">
                     <div class="User">
                         <ion-icon class="UserPicture" name="person-outline"></ion-icon>
                         <p class="UserName">Usuário</p>
@@ -61,7 +68,7 @@
         </div>
         <div class="ConfigPopup" id="ConfigPopup">
             <!-- CAMPO DO USUÁRIO -->
-            <a class="UserField" href="../../../../html/login.html">
+            <a class="UserField" href="login.html">
                 <ion-icon class="UserPicture" name="person-outline"></ion-icon>
                 <div class="UserTexts">
                     <p class="UserName">Usuário</p>
@@ -94,42 +101,18 @@
             </div>
         </div>
         <!-- CORPO DA PÁGINA -->
-        <div class="BodyPage">
-            <div class="InvisibleField">
-                <div class="ProjectField">
-                    <div class="ProjectTitle">
-                        <a href="https://projetolocomotiva.com.br/"><img class="ProjectLogo" src="logo2.png"></a>
-                    </div>
-                    <div class="ProjectImages">
-                        <img class="SquadedModelImages" src="modelo1.jpg">
-                        <img class="SquadedModelImages" src="modelo2.jpg">
-                        <img class="SquadedModelImages" src="modelo3.jpg">
-                    </div>
-                    <h2 class="ProjectText">O Projeto Locomotiva é uma organização sem fins lucrativos que assiste, por meio do ensino da música no contra turno escolar para crianças e adolescentes.</h2>
-                    <div class="ProjectVideoContainer"><div class="ProjectVideo">
-                        <iframe width="1175" height="661" src="https://www.youtube.com/embed/igJHj6aUo6M?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div></div>
-                    <div class="ProjectButtons">
-                        <a class="DonateButton" href="https://projetolocomotiva.com.br/como-contribuir/">doar agora!</a>
-                    </div>
-                </div>
-                <!-- REDES SOCIAIS DO PROJETO -->
-                <div class="SocialMediaField">
-                    <a href="https://www.instagram.com/projetolocomotiva/?hl=pt-br"><ion-icon class="SocialMediaIcon" name="logo-instagram"></ion-icon></a>
-                    <a href="https://www.facebook.com/projetolocomotiva"><ion-icon class="SocialMediaIcon" name="logo-facebook"></ion-icon></a>
-                    <a href="https://www.youtube.com/channel/UCJ61ysPPzaKk61Z6LK3uX9w"><ion-icon class="SocialMediaIcon" name="logo-youtube"></ion-icon></a>
-                    <a href="mailto:contato@projetolocomotiva.com.br"><ion-icon class="SocialMediaIcon" name="mail-outline"></ion-icon></a>
-                </div>
+        <div class="PageBody">
+            <div class="BigField">
             </div>
         </div>
     </body>
     <!-- LINK PARA ADIÇÃO DO JAVASCRIPT COM SUAS FUNCIONALIDADES; -->
         <!-- DARK MODE E BRIGHT MODE -->
-        <script src="../../../../javascript/ColorScheme.js"></script>
+        <script src="../javascript/ColorScheme.js"></script>
         <!-- TRADUZIR A PÁGINA -->
-        <script src="../../../../javascript/Translate.js"></script>
+        <script src="../javascript/Translate.js"></script>
         <!-- BARRA DE PESQUISA -->
-        <script src="../../../../javascript/SlideSearchbar.js"></script>
+        <script src="../javascript/SlideSearchbar.js"></script>
         <!-- MOUSEOVER, DESCRIÇÃO DOS FEEDS -->
-        <script src="../../../../javascript/MouseOverHeader.js"></script>
+        <script src="../javascript/MouseOverHeader.js"></script>
 </html>
