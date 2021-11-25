@@ -1,0 +1,97 @@
+.PageBody {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.PageBody .TimeLine {
+    width: max-content; height: max-content;
+    display: block;
+    padding-top: 50px; padding-bottom: 50px; padding-left: 100px; padding-right: 100px;
+    justify-content: center; align-items: center;
+}
+
+.PageBody .TimeLine .Publication {
+    width: 700px; min-height: max-content;
+    background-color: var(--header-color); border-radius: 10px;
+    box-shadow: 0px 7px 15px 0.5px var(--shadow-color);
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication {
+    width: 100%; height: 75px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication .Profile {
+    width: max-content; height: auto;
+    display: flex;
+    padding: 20px; padding-left: 20px; padding-right: 20px;
+    align-items: center;
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication .Profile .ProfilePicture {
+    width: 50px; height: 50px;
+    background-color: var(--primary-icons-color); border-radius: 100%;
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication .Profile .ProfileTexts {
+    width: max-content; height: max-content;
+    display: block;
+    align-items: center; justify-content: center;
+    margin-left: 20px;
+    color: var(--primary-text-color);
+
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication .Profile .ProfileTexts .ProfileName {
+    height: max-content;
+    font-size: 20px; font-weight: bold;
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication .Profile .ProfileTexts .PublicationTime {
+    height: max-content;
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication .Buttons {
+    width: 100px; height: 100%;
+    color: var(--primary-icons-color);
+    margin-left: 350px;
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication .Buttons .ShareButton {
+    cursor: pointer;
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication .Buttons .Icon {
+    object-fit: contain;
+    width: 40%;
+}
+
+.PageBody .TimeLine .Publication .ContentOfPublication {
+    width: 100%; height: max-content;
+    min-height: 200px;
+    background-color: purple;
+}
+
+.PageBody .TimeLine .Publication .BottomOfPublication {
+    width: 100%; height: 75px;
+    background-color: gray; border-radius: 10px;
+}
+
+.PageBody .TimeLine .Publication .BottomOfPublication .LikeButton {
+    width: 50%;
+    padding: 20px; padding-left: 100px; padding-right: 100px;
+    display: flex;
+    justify-content: center; align-items: center;
+}
+
+.PageBody .TimeLine .Publication .BottomOfPublication .LikeButton .LikeWord {
+    width: auto; height: auto;
+    font-size: 20px;
+}
+
+.PageBody .TimeLine .Publication .BottomOfPublication .LikeButton .Icon {
+    object-fit: contain;
+    width: 100%;
+}
