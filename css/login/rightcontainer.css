@@ -69,6 +69,14 @@
         justify-content: center; align-items: center; text-align: center;
         width: 100%; height: fit-content;
     }
+
+    .GlobalContainer .RightContainer1 .RightContainer .LoginField {
+        display: block;
+    }
+
+    .GlobalContainer .RightContainer1 .RightContainer .RegisterField {
+        display: none;
+    }
 }
 
 /* ESTILO QUE SERÁ APLICADO EM DESKTOPS */

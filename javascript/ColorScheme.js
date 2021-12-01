@@ -13,7 +13,7 @@ function ColorScheme(){
         /* MUDANÇA PARA PODER APERTAR O BOTÃO NOVAMENTE */
         ColorModeSelection = 0;
 
-                
+          
 
         /* TROCA DAS CORES */
         Body.style.setProperty('--background-color', '#333333');

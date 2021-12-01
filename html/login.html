@@ -45,6 +45,7 @@
                         <form action="login.php" method="post">
                             <input name="username" id="UsernameField" class="Field" placeholder="Email ou usuário" type="text" required>
                             <input name="password" class="Field" placeholder="Senha" type="password" required>
+                            <p id="text" style="display: none;">Text</p>
                             <input id="SubmitButton" type="submit" class="LoginButton Button" value="Entrar" onclick="submitButton2"></input>
                         </form>
                         <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
@@ -86,5 +87,5 @@
         <!-- TROCAR DA TELA DE LOGIN PARA A TELA DE REGISTRO -->
         <script src="../javascript/ChangeFromLoginToRegister.js"></script>
         <!-- GET USER DATA -->
-        <script src="../javascript/GetUserData.js"></script>
+        <script src="../javascript/LocalStorage.js"></script>
 </html>
