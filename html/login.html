@@ -42,25 +42,25 @@
             <div class="RightContainer1">
                 <div class ="RightContainer">
                     <div id="LoginField" class="LoginField">
-                        <form method="POST" name="frm_login">
-                            <input name="usuario" class="Field" placeholder="Email ou usuário" required>
-                            <input name="senha" class="Field" placeholder="Senha" type="password" required>
-                            <input type="submit" id="LoginButton" class="LoginButton Button" name="entrar" value="Entrar" onclick="document.frm_login.action='php/login.php'"></input>
+                        <form action="login.php" method="post">
+                            <input name="username" id="UsernameField" class="Field" placeholder="Email ou usuário" type="text" required>
+                            <input name="password" class="Field" placeholder="Senha" type="password" required>
+                            <input id="SubmitButton" type="submit" class="LoginButton Button" value="Entrar" onclick="submitButton2"></input>
                         </form>
                         <a id="ForgetText" class="ForgetText" href="#">Esqueceu algo?</a>
                     </div>
                     <div id="RegisterField" class="RegisterField">
-                        <form name="frm_register" method="POST">
-                            <input class="Field" placeholder="Digite aqui seu nome de usuário." name="usuario" required type="text" size="40" maxlength="40">
-                            <input class="Field" placeholder="Digite aqui seu email." name="email" required  type="text" size="60" maxlength="60">
-                            <input class="Field" placeholder="Digite aqui sua senha." name="senha" required  type="password" size="60" maxlength="60">
-                            <input type="submit" id="RegisterButton" class="LoginButton Button" name="cadastrar" value="Cadastrar" onclick="document.frm_register.action='php/register.php'"></button>
+                        <form action="register.php" method="post">
+                            <input name="username" class="Field" placeholder="Digite aqui seu nome de usuário."  required type="text">
+                            <input name="email" class="Field" placeholder="Digite aqui seu email."  required  type="text">
+                            <input name="password" class="Field" placeholder="Digite aqui sua senha." required  type="password">
+                            <input type="submit" class="LoginButton Button" value="Cadastrar">
                         </form>
                     </div>
                     <hr class="Horizontal-Line">
                     <div class="RegisterContainer">
                         <button id="RegisterAndLoginButton" class="RegisterButton Button">Criar nova conta</button>
-                        <a id="BrowseAnonymously" class="BrowseAnonymously" href="index.html">Navegar Anonimamente</a>
+                        <a id="BrowseAnonymously" class="BrowseAnonymously" href="Helpfull.html">Navegar Anonimamente</a>
                     </div>
                 </div>
                 <div class="alert" hidden>Login ou senha incorretos</div>
@@ -85,4 +85,6 @@
         <script src="../javascript/Translate.js"></script>
         <!-- TROCAR DA TELA DE LOGIN PARA A TELA DE REGISTRO -->
         <script src="../javascript/ChangeFromLoginToRegister.js"></script>
+        <!-- GET USER DATA -->
+        <script src="../javascript/GetUserData.js"></script>
 </html>
