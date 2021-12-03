@@ -7,6 +7,7 @@ Username.addEventListener('input', letter => {
 })
 
 const SaveToLocalStorage = () => {
+    localStorage.setItem('Logged', "1");
     localStorage.setItem('Username', text.textContent);
 }
 
