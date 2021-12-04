@@ -31,15 +31,6 @@
         <div class="header">
             <!-- BOTÃO HOME / LOGO -->
             <a class="HomeButton" href="index.html"><img src="../../../../files/Icons/favicon.ico"></a>
-            <!-- BOTÃO DE PESQUISA -->
-            <div class="Search">
-                <div class="SearchBackground" id="SearchBackground">
-                    <input id="SearchInput" class="SearchInput" placeholder="Pesquisar na Helpfull">
-                    <div class="SearchButton" id="SearchButton">
-                        <ion-icon class="SearchIcon" name="search-outline"></ion-icon>
-                    </div>
-                </div>
-            </div>
             <!-- BOTÕES DE FEEDS -->
             <div class="Feeds">
                 <a class="Favorites" href="index.html" id="FavoritesButton">
@@ -53,7 +44,7 @@
             </div>
             <!-- PERFIL E CONFIGURAÇÕES -->
             <div class="UserAndConfigContainer">
-                <a href="login.html" class="a" id="UserButton">
+                <a href="login.html" class="a UsersContainers" id="UserButton">
                     <div class="User">
                         <ion-icon class="UserPicture" name="person-outline"></ion-icon>
                         <p class="UserName">Usuário</p>
@@ -68,7 +59,7 @@
         </div>
         <div class="ConfigPopup" id="ConfigPopup">
             <!-- CAMPO DO USUÁRIO -->
-            <a class="UserField" href="login.html">
+            <a class="UserField UsersContainers" href="login.html">
                 <ion-icon class="UserPicture" name="person-outline"></ion-icon>
                 <div class="UserTexts">
                     <p class="UserName">Usuário</p>
@@ -115,4 +106,7 @@
         <script src="../javascript/SlideSearchbar.js"></script>
         <!-- MOUSEOVER, DESCRIÇÃO DOS FEEDS -->
         <script src="../javascript/MouseOverHeader.js"></script>
+        <!-- GET USER DATA -->
+        <script src="../javascript/GetUserData.js"></script>
+        <script src="../javascript/ChangeData.js"></script>
 </html>

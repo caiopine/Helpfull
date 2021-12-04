@@ -1,5 +1,5 @@
 var Logged = localStorage.getItem('Logged');
-var StoredName; var UserNameReceptor;
+var StoredName; var UserNameReceptor; var InUserProfile;
 
 if (Logged == 1) {
     /* TROCA DO NOME DE PERFIL */
@@ -9,10 +9,15 @@ if (Logged == 1) {
     UserNameReceptor[1].innerText = StoredName;
 
     /* TROCA DO REDIRECIONAMENTO DO PERFIL */
-    UsersContainers = document.querySelectorAll(".UsersContainers");
-    console.log(UsersContainers);  
-    UsersContainers[0].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
-    UsersContainers[1].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
+    if (InUserProfile == 1) {
+        UsersContainers = document.querySelectorAll(".UsersContainers");
+        UsersContainers[0].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
+        UsersContainers[1].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
+    }
+
+    else {
+        
+    }
 }
 
 else {
