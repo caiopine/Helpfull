@@ -13,20 +13,23 @@ if (Logged == 1) {
     /* TROCA DA FOTO DE PERFIL */
     UserPicture = document.querySelectorAll('.UserPicture');
 
-    if (actualhref[7] == "Helpfull.html" || actualhref[7] == "timeline.html") {
+    UsersContainers = document.querySelectorAll(".UsersContainers");
+
+    console.log(actualhref[1]);
+
+    if (actualhref.includes("Helpfull.html") || actualhref.includes("timeline.html")) {
         UserPicture[0].setAttribute('src', "../files/database/projects/" + StoredName + "/profilepicture.jpg");
         UserPicture[1].setAttribute('src', "../files/database/projects/" + StoredName + "/profilepicture.jpg");
+        UsersContainers[0].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
+        UsersContainers[1].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
     }
 
-    else {  
-        UserPicture[0].setAttribute('src', "profilepicture.jpg");
-        UserPicture[1].setAttribute('src', "profilepicture.jpg");
+    else {
+        UserPicture[0].setAttribute('src', "../" + StoredName + "/profilepicture.jpg");
+        UserPicture[1].setAttribute('src', "../" + StoredName + "/profilepicture.jpg");
+        UsersContainers[0].setAttribute('href', StoredName + ".html");
+        UsersContainers[1].setAttribute('href', StoredName + ".html");
     }
-
-    /* TROCA DO REDIRECIONAMENTO DO PERFIL */
-    UsersContainers = document.querySelectorAll(".UsersContainers");
-    UsersContainers[0].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
-    UsersContainers[1].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
 }
 
 else {
