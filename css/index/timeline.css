@@ -15,6 +15,7 @@
     width: 700px; min-height: max-content;
     background-color: var(--header-color); border-radius: 10px;
     box-shadow: 0px 7px 15px 0.5px var(--shadow-color);
+    margin-bottom: 25px;
 }
 
 .PageBody .TimeLine .Publication .TopOfPublication {
@@ -33,6 +34,11 @@
 .PageBody .TimeLine .Publication .TopOfPublication .Profile .ProfilePicture {
     width: 50px; height: 50px;
     background-color: var(--primary-icons-color); border-radius: 100%;
+}
+
+.PageBody .TimeLine .Publication .TopOfPublication .Profile .ProfilePicture .Picture {
+    width: 100%; height: 100%;
+    border-radius: 100px;
 }
 
 .PageBody .TimeLine .Publication .TopOfPublication .Profile .ProfileTexts {
@@ -70,27 +76,49 @@
 
 .PageBody .TimeLine .Publication .ContentOfPublication {
     width: 100%; height: max-content;
-    min-height: 200px;
-    background-color: purple;
+    padding-left: 10px; padding-right: 10px;
+    min-height: 100px;
+}
+
+.PageBody .TimeLine .Publication .ContentOfPublication .SubtitleOfPublication {
+    width: max-content; height: max-content;
+    font-size: 16px;
+    padding-left: 10px; padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.PageBody .TimeLine .Publication .ContentOfPublication .RealContent {
+    width: 100%; height: 382px;
+    padding-left: 10px; padding-right: 10px;
+    justify-content: center; align-items: center;
 }
 
 .PageBody .TimeLine .Publication .BottomOfPublication {
     width: 100%; height: max-content;
-    padding-top: 10px; padding-bottom: 20px;
-    padding-left: 5px; padding-bottom: 5px;
-    background-color: gray; border-radius: 10px;
+    padding-top: 10px; padding-bottom: 10px;
+    padding-left: 20px; padding-right: 20px;
+    border-radius: 10px;
     display: flex;
     justify-content: center; align-items: center;
-    gap: 100px;
 }
 
 .PageBody .TimeLine .Publication .BottomOfPublication .IconButton {
-    width: 225px; height: max-content;
+    width: 100%; height: max-content;
     padding-top: 10px; padding-bottom: 10px;
     display: flex;
     cursor: pointer;
     justify-content: center; align-items: center; text-align: center;
-    background-color: blue; border-radius: 10px;
+    border-radius: 10px;
+    margin-left: auto; margin-right: auto;
+}
+
+.PageBody .TimeLine .Publication .BottomOfPublication .IconButton:hover {
+    width: 100%; height: max-content;
+    padding-top: 10px; padding-bottom: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center; align-items: center; text-align: center;
+    border-radius: 10px; background-color: var(--header-second-color);
     margin-left: auto; margin-right: auto;
 }
 
