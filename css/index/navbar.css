@@ -135,7 +135,7 @@
     .header .User .UserPicture {
         color: var(--primary-icons-color);
         max-width: 30px; max-height: 30px;
-        width: 80px; height: 30px;
+        width: 80px; height: 40px;
         margin-left: 1px;
         background: var(--header-color); border-radius: 100%;
     }

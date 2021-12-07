@@ -23,7 +23,7 @@
 .ConfigPopup .Userfield .UserPicture {
     width: 50px; height: 40px;
     color: var(--primary-icons-color);
-    padding: 10px; background-color: var(--header-second-color); border-radius: 100%;
+    background-color: var(--header-second-color); border-radius: 100%;
 }
 
 .ConfigPopup .Userfield .UserTexts {
