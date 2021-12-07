@@ -11,12 +11,11 @@ function ChangeData() {
 
         /* TROCA DA FOTO DE PERFIL */
         UserPicture = document.querySelectorAll('.UserPicture');
-        UserPicture[0].setAttribute('src', "../files/database/projects/" + StoredName + "/profilepicture.jpg");
-        UserPicture[1].setAttribute('src', "../files/database/projects/" + StoredName + "/profilepicture.jpg")
+        UserPicture[0].setAttribute('src', "../../../Helpfull/files/database/projects/" + StoredName + "/profilepicture.jpg");
+        UserPicture[1].setAttribute('src', "../../../Helpfull/files/database/projects/" + StoredName + "/profilepicture.jpg")
 
         /* TROCA DO REDIRECIONAMENTO DO PERFIL */
         UsersContainers = document.querySelectorAll(".UsersContainers");
-        console.log(UsersContainers);
         UsersContainers[0].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
         UsersContainers[1].setAttribute('href', "../files/database/projects/" + StoredName + "/" + StoredName + ".html");
     }
