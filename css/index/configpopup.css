@@ -117,3 +117,28 @@
 .ConfigPopup .ColorSchemeAndTranslate .ColorModeButton .Margin {
     right: 100px;
 }
+
+.ConfigPopup .Exitfield {
+    width: 100%; height: max-content;
+    display: flex; align-items: center;
+    padding: 10px; gap: 10px;
+    text-decoration: none;
+    color: var(--primary-text-color); border-radius: 5px;
+}
+
+.ConfigPopup .Exitfield:hover {
+    background-color: var(--header-second-color);
+}
+
+.ConfigPopup .Exitfield .ExitPicture {
+    width: 22px; height: 20px;
+    padding: 10px; padding-left: 10px; background-color: var(--shadow-color); border-radius: 100%;
+}
+
+.ConfigPopup .Exitfield .ExitTexts {
+    font-size: 18px;
+}
+
+.ConfigPopup .Exitfield .ExitTexts .ExitName {
+    font-weight: bolder;
+}

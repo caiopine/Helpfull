@@ -1,6 +1,5 @@
 var Logged = localStorage.getItem('Logged');
 var StoredName; var UserNameReceptor;
-
 var actualhref = window.location.href.split("/");
 
 if (Logged == 1) {
@@ -14,8 +13,6 @@ if (Logged == 1) {
     UserPicture = document.querySelectorAll('.UserPicture');
 
     UsersContainers = document.querySelectorAll(".UsersContainers");
-
-    console.log(actualhref[1]);
 
     if (actualhref.includes("Helpfull.html") || actualhref.includes("timeline.html")) {
         UserPicture[0].setAttribute('src', "../files/database/projects/" + StoredName + "/profilepicture.jpg");
@@ -34,4 +31,14 @@ if (Logged == 1) {
 
 else {
     localStorage.setItem('Username', 'Usuário');
+
+    if (actualhref.includes("Helpfull.html") || actualhref.includes("timeline.html")) {
+        UserPicture[0].setAttribute('src', "../files/Icons/userpicture.png");
+        UserPicture[1].setAttribute('src', "../files/Icons/userpicture.png");
+    }
+
+    else {
+        UserPicture[0].setAttribute('src', "../../../Icons/userpicture.png");
+        UserPicture[1].setAttribute('src', "../../../Icons/userpicture.png");
+    }
 }

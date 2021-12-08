@@ -11,4 +11,8 @@ const SaveToLocalStorage = () => {
     localStorage.setItem('Username', text.textContent);
 }
 
+function SetLogged0 () {
+    localStorage.setItem('Logged', '0');
+}
+
 SubmitButton.addEventListener('click', SaveToLocalStorage);
