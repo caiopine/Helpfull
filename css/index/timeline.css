@@ -81,7 +81,7 @@
 }
 
 .PageBody .TimeLine .Publication .ContentOfPublication .SubtitleOfPublication {
-    width: max-content; height: max-content;
+    width: 700px; height: max-content;
     font-size: 16px;
     padding-left: 10px; padding-right: 10px;
     margin-bottom: 20px;
